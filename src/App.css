@@ -27,7 +27,7 @@ h3 {
     "sidenav body-overview meditation stress"
     "sidenav body-overview meditation weekly"
     "sidenav body-overview intolerance sleep";
-  height: 1600px;
+  height: 1200px;
   width: 100%;
   /*align-items: stretch; Alinha conforme o limite inferior de rolagem*/ 
   background-image: linear-gradient(to top, #19222f, #002544);
@@ -96,8 +96,13 @@ h3 {
 }
 
 .body-overview div:nth-child(2) {
+  /*display: grid;
+  justify-items: center;*/
   display: grid;
-  justify-items: center;
+  background-color: #802BFF;
+  grid-row: auto / span 7;
+  display: subgrid;
+
 }
 
 .body-overview div:nth-child(3) {
@@ -119,7 +124,7 @@ h3 {
 .meditation {
   display: grid;
   grid-area: meditation;
-  grid-template-rows: 10% 10% 15% 10% 10% 1fr;
+  grid-template-rows: repeat(6, 1fr);
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
@@ -128,37 +133,33 @@ h3 {
 
 .meditation div:nth-child(2) {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .meditation div:nth-child(3) {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr;
-  justify-content: left;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  padding-left: 18px;
 }
 
 .meditation div:nth-child(5) {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
 }
 
 .active {
   width: 15px;
   height: 15px;
-  left: 1151px;
-  top: 351px;
 
   /* Gradient */
   background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%);
 }
 
 .neural {
-  width: 15px;
+  width: 1px; /* defini 1px porque deu problema. Rever */
   height: 15px;
-  left: 1306px;
-  top: 351px;
   
   /* Gradient1 */
   background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
@@ -167,8 +168,6 @@ h3 {
 .calm {
   width: 15px;
   height: 15px;
-  left: 1467px;
-  top: 351px;
   
   /* Gradient */
   background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
@@ -177,10 +176,6 @@ h3 {
 #awards-blue {
   width: 62.71px;
   height: 62.71px;
-  left: 1145px;
-  top: 476px;
-  
-  /* Gradient */
   background: linear-gradient(86.53deg, #72C6EF -0.02%, #004E8F 100.02%);
   border-radius: 8px;
 }
@@ -188,18 +183,19 @@ h3 {
 #awards-rose {
   width: 62.71px;
   height: 62.71px;
-  left: 1233px;
-  top: 476px;
-  
   background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
   border-radius: 8px;
 }
 
-.meditation div:nth-child(6) {
+.meditation div:nth-child(7) {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+ 
+}
+
+.meditation div:nth-child(8) {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-gap: 5px;
-  overflow: hidden;
 }
 
 #blue-bar1 {
@@ -243,16 +239,28 @@ h3 {
   padding: 15px;
 }
 
-
-
 /* Container */
 .weekly {
+  display: grid;
   grid-area: weekly;
+  grid-template-rows: 1fr 1fr;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 15px;
 }
+
+.weekly div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.weekly div:nth-child(3) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
 
 /* Container */
 .intolerance {

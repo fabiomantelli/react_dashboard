@@ -128,29 +128,26 @@ function App() {
 
           <div>
             <div className="active"></div>
-
-            <div>
-              <h3>Active</h3>
-            </div>
-
+            <h3>Active</h3>
             <div className="neural"></div>
-
-            <div>
-              <h3>Neutral</h3>
-            </div>
-
+            <h3>Neural</h3>
             <div className="calm"></div>
+            <h3>Calm</h3>
+          </div>
 
-            <div>
-              <h3>Calm</h3>
-              <h3>21 sec</h3>
-            </div>
+          <div>
+            <h3>11 sec</h3>
+            <h3>28 sec</h3>
+            <h3>21 sec</h3>
+          </div>
+
+          <div>
+            <h2>Your Awards</h2>
           </div>
 
           <div>
             <div id="awards-blue"></div>
             <div id="awards-rose"></div>
-            <div></div>
           </div>
 
           <div>
@@ -223,7 +220,26 @@ function App() {
 
         </section>
 
-        <section className="weekly">weekly</section>
+        <section className="weekly">
+          <div className="titulo">
+            <h1>WEEKLY ACTIVE MINUTES</h1>
+          </div>
+
+          <div>
+            <div className="active"></div>
+            <div className="neural"></div>
+            <div className="calm"></div>
+
+          </div>
+
+          <div>
+            <h3>Active</h3>
+            <h3>Neutral</h3>
+            <h3>Calm</h3>
+          </div>
+
+        </section>
+        
 
         <section className="intolerance">
           <div className="titulo">
