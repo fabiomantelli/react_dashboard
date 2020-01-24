@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/react_dashboard/static/css/main.b0b8d301.chunk.css",
+    "main.js": "/react_dashboard/static/js/main.45e21220.chunk.js",
+    "main.js.map": "/react_dashboard/static/js/main.45e21220.chunk.js.map",
+    "runtime-main.js": "/react_dashboard/static/js/runtime-main.b6a50720.js",
+    "runtime-main.js.map": "/react_dashboard/static/js/runtime-main.b6a50720.js.map",
+    "static/js/2.2488ca3b.chunk.js": "/react_dashboard/static/js/2.2488ca3b.chunk.js",
+    "static/js/2.2488ca3b.chunk.js.map": "/react_dashboard/static/js/2.2488ca3b.chunk.js.map",
+    "index.html": "/react_dashboard/index.html",
+    "precache-manifest.92dc692d19edfd3f2ea2b07097e0bb7f.js": "/react_dashboard/precache-manifest.92dc692d19edfd3f2ea2b07097e0bb7f.js",
+    "service-worker.js": "/react_dashboard/service-worker.js",
+    "static/css/main.b0b8d301.chunk.css.map": "/react_dashboard/static/css/main.b0b8d301.chunk.css.map",
+    "static/js/2.2488ca3b.chunk.js.LICENSE": "/react_dashboard/static/js/2.2488ca3b.chunk.js.LICENSE",
+    "static/media/alex.svg": "/react_dashboard/static/media/alex.05581040.svg",
+    "static/media/ampulheta.svg": "/react_dashboard/static/media/ampulheta.4e3a33ce.svg",
+    "static/media/bell-icon.svg": "/react_dashboard/static/media/bell-icon.2a86977b.svg",
+    "static/media/body-graph-red.svg": "/react_dashboard/static/media/body-graph-red.c1510a86.svg",
+    "static/media/body-graph-red2.svg": "/react_dashboard/static/media/body-graph-red2.c1510a86.svg",
+    "static/media/body.svg": "/react_dashboard/static/media/body.ecd22a25.svg",
+    "static/media/calendar-icon.svg": "/react_dashboard/static/media/calendar-icon.0526fa72.svg",
+    "static/media/folder-icon.svg": "/react_dashboard/static/media/folder-icon.9fbfbd76.svg",
+    "static/media/icon1.svg": "/react_dashboard/static/media/icon1.c975a50f.svg",
+    "static/media/icon2.svg": "/react_dashboard/static/media/icon2.fd866b98.svg",
+    "static/media/icon3.svg": "/react_dashboard/static/media/icon3.8c05bd2b.svg",
+    "static/media/icon4.svg": "/react_dashboard/static/media/icon4.8fd44ac3.svg",
+    "static/media/icon5.svg": "/react_dashboard/static/media/icon5.ad4991a6.svg",
+    "static/media/letter-icon.svg": "/react_dashboard/static/media/letter-icon.92643d14.svg",
+    "static/media/pie-icon.svg": "/react_dashboard/static/media/pie-icon.6a6925b7.svg",
+    "static/media/retangle-icon.svg": "/react_dashboard/static/media/retangle-icon.5fe68c38.svg",
+    "static/media/retangle2-icon.svg": "/react_dashboard/static/media/retangle2-icon.dfd88ae2.svg",
+    "static/media/stress-photo.svg": "/react_dashboard/static/media/stress-photo.fcfe522d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6a50720.js",
+    "static/js/2.2488ca3b.chunk.js",
+    "static/css/main.b0b8d301.chunk.css",
+    "static/js/main.45e21220.chunk.js"
+  ]
+}
