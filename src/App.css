@@ -3,233 +3,227 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
-
-h1,h2 {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   color: #fff;
 }
 
-h3 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 12px;
-  color: #fff;
+.title {
+  font-size: 1em;
 }
 
 /* Assign grid instructions to our parent grid container */
 .grid-container {
   display: grid;
-  grid-template-columns: 5% 1.3fr 1fr 1fr;
-  grid-template-rows: 11.57% 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns: 7.5% 1fr 1fr 1fr;
+  grid-template-rows: 11.57% 10fr 1fr 1fr;
+  grid-gap: 10px;
   grid-template-areas:
     "sidenav header header header"
     "sidenav body-overview meditation stress"
     "sidenav body-overview meditation weekly"
     "sidenav body-overview intolerance sleep";
-  height: 1200px;
+  height: 750px;
   width: 100%;
   /*align-items: stretch; Alinha conforme o limite inferior de rolagem*/ 
   background-image: linear-gradient(to top, #19222f, #002544);
-
+  padding-right: 15px;
+  align-items: strech;
+  /*overflow: hidden;*/
 }
 
 /* Give every child element its grid name */
-.header {
+.header-page {
   display: grid;
   grid-area: header;
   grid-template-columns: 2fr 1fr;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.header h1 {
-  font-size: 24px;
+.header-page h1 {
+  font-size: 18px;
   text-transform: capitalize;
-  padding-left: 15px;
 }
 
-.header h2 {
-  font-size: 12px;
-  padding-left: 15px;
+.header-page h2 {
+  font-size: .7em;
 }
 
 .right-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-}
-
-#icones-notificacao {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-#photo-name {
-  display: grid;
-  justify-items: center;
+  padding: 15px;
 }
 
 .sidenav {
   display: grid;
   grid-area: sidenav;
-  grid-template-rows: 10% 4% 4% 4% 4% 4%;
+  grid-template-rows: 10% 1fr 1fr;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
   background-image: linear-gradient(to top, #19222f, #002544);
   justify-items: center;
+  justify-content: space-evenly;
 }
 
-.sidenav div:nth-child(1) {
+.sidenav img:first-child {
   margin-top: 25px;
 } 
+
+.sidenav div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  
+}
 
 /* Container */
 .body-overview {
   display: grid;
   grid-area: body-overview;
-  grid-template-rows: 5% 1fr 5% 0.4fr 1fr;
+  grid-template-rows: 4% 30% 10% 15% 15% 15%;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
-  padding: 15px;
+  padding: 5px;
 }
 
-.body-overview div:nth-child(2) {
-  /*display: grid;
-  justify-items: center;*/
-  display: grid;
-  background-color: #802BFF;
-  grid-row: auto / span 7;
-  display: subgrid;
 
+.body-overview div:nth-child(2) {
+  display: flex;
+  justify-content: center;
 }
 
 .body-overview div:nth-child(3) {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  justify-items: center;
-  font-size: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px
 }
 
 #Graphred {
-  max-width: 70%;
+  max-width: 100%;
 }
 
 #Graphred2 {
-  max-width: 70%;
+  max-width: 100%;
 }
 
 /* Container */
 .meditation {
   display: grid;
   grid-area: meditation;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 15% 10% 10% 12% 10% 13%;
+  grid-template-columns: repeat(3, 1fr);
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
-  padding: 15px;
+  padding: 5px;
 }
 
-.meditation div:nth-child(2) {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+.meditation h1 {
+  grid-column: 1/4;
 }
 
-.meditation div:nth-child(3) {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.itens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: 'Nunito', sans-serif;
+  font-size: .6em;
+}
+
+.meditation div#awards {
+  grid-column: 1/4;
+  font-family: 'Nunito', sans-serif;
+  font-size: .7em;
+}
+
+.meditation div#awards-icons {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.meditation #calm-percentage {
+  grid-column: 1/4;
+}
+
+.meditation div#icons-monitoring {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.meditation div#bar {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: baseline;
   justify-content: center;
-  padding-left: 18px;
-}
-
-.meditation div:nth-child(5) {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  overflow: hidden;
 }
 
 .active {
   width: 15px;
   height: 15px;
-
-  /* Gradient */
   background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%);
 }
 
 .neural {
-  width: 1px; /* defini 1px porque deu problema. Rever */
+  width: 15px; /* defini 1px porque deu problema. Rever */
   height: 15px;
-  
-  /* Gradient1 */
   background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
 }
 
 .calm {
   width: 15px;
   height: 15px;
-  
-  /* Gradient */
   background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
 }
 
 #awards-blue {
-  width: 62.71px;
-  height: 62.71px;
+  width: 30px;
+  height: 30px;
   background: linear-gradient(86.53deg, #72C6EF -0.02%, #004E8F 100.02%);
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 #awards-rose {
-  width: 62.71px;
-  height: 62.71px;
+  width: 30px;
+  height: 30px;
   background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
-  border-radius: 8px;
-}
-
-.meditation div:nth-child(7) {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
- 
-}
-
-.meditation div:nth-child(8) {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  border-radius: 2px;
 }
 
 #blue-bar1 {
-  position: relative;
   height: 85px;
-  width: 25;
-
-  /* Gradient */
+  width: 25px;
   background: linear-gradient(88.98deg, #72C6EF -0.02%, #004E8F 100.02%);
-  justify-items: baseline;
 }
-
-/* Continuar aqui a respeito de colocar duas imagens uma em cima da outra */
 
 #blue-bar2 {
-  position: relative;
   height: 71px;
-  width: 25;
-  
-
-  /* Gradient */
+  width: 25px;
   background: linear-gradient(88.98deg, #72C6EF -0.02%, #004E8F 100.02%);
 }
 
-.blue-bar-shadow {
-  position: relative;
-  height: 125px;
-  width: 25px;
-  background: rgba(74, 183, 255, 0.1);
-}
-
-/* Container */
+/* Container ----------------------------- */
 .stress {
+  display: grid;
   grid-area: stress;
+  grid-template-rows: 50% 28% 50%;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: url('./assets/stress/stress-photo.svg');
@@ -239,42 +233,89 @@ h3 {
   padding: 15px;
 }
 
+#schedule {
+  background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
+  box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
+  border-radius: 8px;
+  border: none;
+  width: 160px;
+  height: 40px;
+}
+
+.stress h2 {
+  font-size: 15px;
+}
+
 /* Container */
 .weekly {
   display: grid;
   grid-area: weekly;
   grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 15px;
 }
 
-.weekly div:nth-child(2) {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.weekly .title {
+  grid-column: 1/4;
 }
-
-.weekly div:nth-child(3) {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-
 
 /* Container */
 .intolerance {
+  display: grid;
   grid-area: intolerance;
+  grid-template-rows: 10% repeat(3, 1fr);
+  grid-template-columns: 22% 2% 1fr;
+  grid-gap: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 15px;
 }
 
+.intolerance .title {
+  grid-column: 1/4;
+}
+
+.intolerance .circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%);
+}
+
+.intolerance h3 {
+  font-size: 1em;
+}
+
+.intolerance h4 {
+  font-size: 0.7em;
+}
+
+.intolerance .intolerance-itens {
+  display: grid;
+}
+
+.intolerance .image-intolerance {
+  width: 60%;
+
+}
+
 .sleep {
+  display: grid;
   grid-area: sleep;
+  grid-template-rows: 15% 5% 5fr;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 15px;
+}
+
+
+.sleep div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
