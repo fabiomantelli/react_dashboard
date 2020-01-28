@@ -161,6 +161,17 @@
   animation-iteration-count: 1;
 }
 
+#Ampulheta {
+  transition: all 0.8s ease-in-out 0s;
+}
+
+#Ampulheta:hover {
+  -webkit-transform: rotateZ(-180deg);
+  -ms-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+}
+
+
 /* Container ----- */
 .body {
   display: grid;

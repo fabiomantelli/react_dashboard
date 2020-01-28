@@ -65,7 +65,7 @@ function App() {
 
       <aside className="sidenav">
         <div>
-          <img src={Ampulheta} alt="Ampulheta" />
+          <img src={Ampulheta} alt="Ampulheta" id="Ampulheta"/>
         </div>
           
         <ul>
