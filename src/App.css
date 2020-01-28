@@ -241,7 +241,6 @@
   padding: 15px;
 }
 
-
 .intolerance .title {
   grid-column: 1/4;
 }
@@ -272,6 +271,7 @@
   grid-row: meditation-row;
   grid-template-columns: [stress] 1fr;
   grid-template-rows: [alert] 1.5fr [weekly] 1fr;
+  grid-gap: 15px;
 }
 
 .stress {
