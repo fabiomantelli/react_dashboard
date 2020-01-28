@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react_dashboard/static/css/main.fef2c31b.chunk.css",
+    "main.css": "/react_dashboard/static/css/main.81b4a129.chunk.css",
     "main.js": "/react_dashboard/static/js/main.f4cafe72.chunk.js",
     "main.js.map": "/react_dashboard/static/js/main.f4cafe72.chunk.js.map",
     "runtime-main.js": "/react_dashboard/static/js/runtime-main.b6a50720.js",
@@ -9,10 +9,10 @@
     "static/js/2.4c1ec69b.chunk.js": "/react_dashboard/static/js/2.4c1ec69b.chunk.js",
     "static/js/2.4c1ec69b.chunk.js.map": "/react_dashboard/static/js/2.4c1ec69b.chunk.js.map",
     "index.html": "/react_dashboard/index.html",
-    "precache-manifest.d6a395a3766fcdef24292be0b83bd2c3.js": "/react_dashboard/precache-manifest.d6a395a3766fcdef24292be0b83bd2c3.js",
+    "precache-manifest.7c7f8cd4efc22576f2c365a55a4856eb.js": "/react_dashboard/precache-manifest.7c7f8cd4efc22576f2c365a55a4856eb.js",
     "service-worker.js": "/react_dashboard/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/react_dashboard/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.fef2c31b.chunk.css.map": "/react_dashboard/static/css/main.fef2c31b.chunk.css.map",
+    "static/css/main.81b4a129.chunk.css.map": "/react_dashboard/static/css/main.81b4a129.chunk.css.map",
     "static/js/2.4c1ec69b.chunk.js.LICENSE": "/react_dashboard/static/js/2.4c1ec69b.chunk.js.LICENSE",
     "static/media/alex.svg": "/react_dashboard/static/media/alex.05581040.svg",
     "static/media/ampulheta.svg": "/react_dashboard/static/media/ampulheta.4e3a33ce.svg",
@@ -49,7 +49,7 @@
     "static/js/runtime-main.b6a50720.js",
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.4c1ec69b.chunk.js",
-    "static/css/main.fef2c31b.chunk.css",
+    "static/css/main.81b4a129.chunk.css",
     "static/js/main.f4cafe72.chunk.js"
   ]
 }
