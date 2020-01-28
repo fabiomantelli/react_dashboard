@@ -15,21 +15,15 @@
 }
 
 /* Assign grid instructions to our parent grid container */
-.grid-container {
+.App {
   display: grid;
-  grid-template-columns: 7.5% 1fr 1fr 1fr;
-  grid-template-rows: 11.57% 10fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    "sidenav header header header"
-    "sidenav body-overview meditation stress"
-    "sidenav body-overview meditation weekly"
-    "sidenav body-overview intolerance sleep";
-  height: 750px;
-  width: 100%;
+  grid-template-columns: [sidenav] 1fr [conteudo] 14fr;
+  grid-template-rows: [header-page] 100px [body] 100vh;
+  grid-gap: 15px;
   /*align-items: stretch; Alinha conforme o limite inferior de rolagem*/ 
   background-image: linear-gradient(to top, #19222f, #002544);
   padding-right: 15px;
+  padding-bottom: 15px;
   align-items: strech;
   /*overflow: hidden;*/
 }
@@ -37,12 +31,12 @@
 /* Give every child element its grid name */
 .header-page {
   display: grid;
-  grid-area: header;
-  grid-template-columns: 2fr 1fr;
+  grid-column: conteudo;
+  grid-row: header-page;
+  grid-template-columns: [left-header] 1.8fr [right-header] 1fr;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   align-items: center;
-  padding-right: 15px;
   padding-left: 15px;
 }
 
@@ -63,49 +57,64 @@
   padding: 15px;
 }
 
+/* Container ----- */
 .sidenav {
   display: grid;
-  grid-area: sidenav;
-  grid-template-rows: 10% 1fr 1fr;
+  grid-column: sidenav;
+  grid-row: header-page / span 2;
+  grid-template-rows: 1fr 8fr;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
   background-image: linear-gradient(to top, #19222f, #002544);
   justify-items: center;
   justify-content: space-evenly;
 }
 
-.sidenav img:first-child {
-  margin-top: 25px;
-} 
 
-.sidenav div:nth-child(2) {
-  display: flex;
+.sidenav img:first-child {
+  margin-top: 35px;
   flex-direction: column;
-  padding: 10px;
-  justify-content: space-between;
-  
 }
 
-/* Container */
-.body-overview {
+.sidenav ul {
+  list-style-type: none;
+}
+
+/* Container ----- */
+.body {
   display: grid;
-  grid-area: body-overview;
-  grid-template-rows: 4% 30% 10% 15% 15% 15%;
+  grid-column: conteudo;
+  grid-gap: 15px;
+  grid-row: body;
+  grid-template-columns: [overview] 1.2fr [meditation-column] 1fr [stress] 1fr;
+  grid-template-rows: [meditation-row] 1fr [intolerance] 1fr;
+}
+
+
+/* Container ----- */
+.overview {
+  display: grid;
+  grid-column: overview;
+  grid-row: meditation-row / span 2;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 5px;
 }
 
-
-.body-overview div:nth-child(2) {
+.overview div:nth-child(2) {
   display: flex;
   justify-content: center;
 }
 
-.body-overview div:nth-child(3) {
+.overview div:nth-child(3) {
   display: flex;
   justify-content: space-between;
-  padding: 15px
+  padding: 15px;
+  
+}
+
+.overview img:first-child {
+  width: 50%;
 }
 
 #Graphred {
@@ -116,17 +125,18 @@
   max-width: 100%;
 }
 
-/* Container */
+
+/* Container ----- */
 .meditation {
   display: grid;
-  grid-area: meditation;
-  grid-template-rows: 15% 10% 10% 12% 10% 13%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-column: meditation-column;
+  grid-row: meditation-row;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 5px;
 }
+
 
 .meditation h1 {
   grid-column: 1/4;
@@ -161,7 +171,7 @@
   grid-column: 1/4;
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
+  padding-left: 30px;  
   padding-right: 30px;
 }
 
@@ -219,61 +229,18 @@
   background: linear-gradient(88.98deg, #72C6EF -0.02%, #004E8F 100.02%);
 }
 
-/* Container ----------------------------- */
-.stress {
-  display: grid;
-  grid-area: stress;
-  grid-template-rows: 50% 28% 50%;
-  border-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-image: url('./assets/stress/stress-photo.svg');
-  background-position: center top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  padding: 15px;
-}
-
-#schedule {
-  background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
-  box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
-  border-radius: 8px;
-  border: none;
-  width: 160px;
-  height: 40px;
-}
-
-.stress h2 {
-  font-size: 15px;
-}
-
-/* Container */
-.weekly {
-  display: grid;
-  grid-area: weekly;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  border-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(to bottom, #19222f, #002544);
-  padding: 15px;
-}
-
-.weekly .title {
-  grid-column: 1/4;
-}
-
-/* Container */
+/* Container ----- */
 .intolerance {
   display: grid;
-  grid-area: intolerance;
-  grid-template-rows: 10% repeat(3, 1fr);
-  grid-template-columns: 22% 2% 1fr;
+  grid-column: meditation-column;
+  grid-row: intolerance;
   grid-gap: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 15px;
 }
+
 
 .intolerance .title {
   grid-column: 1/4;
@@ -294,28 +261,76 @@
   font-size: 0.7em;
 }
 
-.intolerance .intolerance-itens {
-  display: grid;
-}
-
 .intolerance .image-intolerance {
-  width: 60%;
-
+  width: 70%;
 }
 
-.sleep {
+/* Container ----- */
+.stress-weekly {
   display: grid;
-  grid-area: sleep;
-  grid-template-rows: 15% 5% 5fr;
+  grid-column: stress;
+  grid-row: meditation-row;
+  grid-template-columns: [stress] 1fr;
+  grid-template-rows: [alert] 1.5fr [weekly] 1fr;
+}
+
+.stress {
+  display: grid;
+  grid-column: stress;
+  grid-row: alert;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-image: url('./assets/stress/stress-photo.svg');
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+
+#schedule {
+  background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
+  box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
+  border-radius: 8px;
+  border: none;
+  width: 160px;
+  height: 40px;
+}
+
+.stress h2 {
+  font-size: 15px;
+}
+
+.weekly {
+  display: grid;
+  grid-column: stress;
+  grid-row: weekly;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
   padding: 15px;
 }
 
+.weekly .title {
+  grid-column: 1/4;
+}
+
+/* Container ----- */
+.sleep {
+  display: grid;
+  grid-column: stress;
+  grid-row: intolerance;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to bottom, #19222f, #002544);
+  padding: 15px;
+}
 
 .sleep div:nth-child(2) {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+
+

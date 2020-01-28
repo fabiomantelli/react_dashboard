@@ -47,40 +47,38 @@ import Img6 from './assets/stress/men6.svg';
 function App() {
   return (
     <div className="App">
-      <div className="grid-container">
-        <header className="header-page">
-          <div className="left-header">
-            <h1>Hi, Alex</h1>
-            <h2>Welcome to your Live Timeless Dashboard. Here you will find insights about your team.</h2>
-          </div>
+      <div className="header-page">
+        <div className="left-header">
+          <h1>Hi, Alex</h1>
+          <h2>Welcome to your Live Timeless Dashboard. Here you will find insights about your team.</h2>
+        </div>
 
-          <div className="right-header">
-            <h2>Wed, 8 Jan</h2>
-            <img src={Bell} alt="Bell" />
-            <img src={Letter} alt="Letter" />
-            <img src={Folder} alt="Folder" />
-            <h2>Alex Gramatzki</h2>
-            <img src={Alex} alt="Alex" />
-          </div>
+        <div className="right-header">
+          <h2>Wed, 8 Jan</h2>
+          <img src={Bell} alt="Bell" />
+          <img src={Letter} alt="Letter" />
+          <img src={Folder} alt="Folder" />
+          <h2>Alex Gramatzki</h2>
+          <img src={Alex} alt="Alex" />
+        </div>
+      </div>
 
-        </header>
-
-        <aside className="sidenav">
-          <div>
-            <img src={Ampulheta} alt="Ampulheta" />
-          </div>
+      <aside className="sidenav">
+        <div>
+          <img src={Ampulheta} alt="Ampulheta" />
+        </div>
           
-          <div>
-            <img src={Retangle} alt="Retangle" />
-            <img src={Retangle2} alt="Retangle2" />
-            <img src={Pie} alt="Pie" />
-            <img src={Pie} alt="Pie" />
-            <img src={Calendar} alt="Calendar" /></div>
+        <ul>
+          <li><img src={Retangle} alt="Retangle" /></li>
+          <li><img src={Retangle2} alt="Retangle2" /></li>
+          <li><img src={Pie} alt="Pie" /></li>
+          <li><img src={Pie} alt="Pie" /></li>
+          <li><img src={Calendar} alt="Calendar" /></li>
+        </ul>  
+      </aside>
 
-
-        </aside>
-
-        <section className="body-overview">
+      <div className="body">
+        <section className="overview">
           <h1 className="title">BODY OVERVIEW</h1>
 
           <div>
@@ -111,16 +109,16 @@ function App() {
             <div className="active"></div>
             <h3>Active<br></br>11 sec</h3>
           </div>
-           
+          
           <div className="itens">
             <div className="neural"></div>
             <h3>Neural<br></br>28 sec</h3>
-           </div>
-           
-           <div className="itens">
+          </div>
+          
+          <div className="itens">
               <div className="calm"></div>
               <h3>Calm<br></br>21 sec</h3>
-           </div>
+          </div>
 
           <div id="awards">
             <h2>Your Awards</h2>
@@ -157,50 +155,10 @@ function App() {
           </div>
         </section>
 
-        <section className="stress">
-          <div>
-            <h1 className="title">Stress Alert!</h1>
-            <h2>Your Marketing Team had a long journey in #3 Project, schedule a Yoga Session.</h2>
-          </div>
-
-          <div>
-            <img src={Img1} alt="Img1" />
-            <img src={Img2} alt="Img2" />
-            <img src={Img3} alt="Img3" />
-            <img src={Img4} alt="Img4" />
-            <img src={Img5} alt="Img5" />
-            <img src={Img6} alt="Img6" />
-          </div>
-          <button id="schedule">SCHEDULE NOW</button>
-
-        </section>
-
-        <section className="weekly">
-          <h1 className="title">WEEKLY ACTIVE MINUTES</h1>
-
-
-          <div className="itens">
-            <div className="active"></div>
-            <h3>Active<br></br>11 sec</h3>
-          </div>
-           
-          <div className="itens">
-            <div className="neural"></div>
-            <h3>Neural<br></br>28 sec</h3>
-           </div>
-           
-           <div className="itens">
-              <div className="calm"></div>
-              <h3>Calm<br></br>21 sec</h3>
-           </div>
-
-        </section>
-
-
         <section className="intolerance">
           <h1 className="title">LIST OF INTOLERANCE FOOD</h1>
 
-          <img src={Milk} alt="Mil" className="image-intolerance"/>
+          <img src={Milk} alt="Milk" className="image-intolerance"/>
           <div className="circle"></div>
           <div className="intolerance-itens">
             <h3>MILK PROTEIN</h3>
@@ -223,26 +181,60 @@ function App() {
             <h4>soybeans, hydrolysed vegetable protein, soy protein isolate, soy lecithin</h4>
             <img src={Man3} alt="Man3"/>
           </div>
-
-
-
         </section>
+
+        <div className="stress-weekly">
+          <section className="stress">
+          <div>
+            <h1 className="title">Stress Alert!</h1>
+            <h2>Your Marketing Team had a long journey in #3 Project, schedule a Yoga Session.</h2>
+          </div>
+
+          <div>
+            <img src={Img1} alt="Img1" />
+            <img src={Img2} alt="Img2" />
+            <img src={Img3} alt="Img3" />
+            <img src={Img4} alt="Img4" />
+            <img src={Img5} alt="Img5" />
+            <img src={Img6} alt="Img6" />
+          </div>
+          <button id="schedule">SCHEDULE NOW</button>
+          </section>
+
+          <section className="weekly">
+            <h1 className="title">WEEKLY ACTIVE MINUTES</h1>
+
+
+            <div className="itens">
+              <div className="active"></div>
+              <h3>Active<br></br>11 sec</h3>
+            </div>
+            
+            <div className="itens">
+              <div className="neural"></div>
+              <h3>Neural<br></br>28 sec</h3>
+            </div>
+            
+            <div className="itens">
+                <div className="calm"></div>
+                <h3>Calm<br></br>21 sec</h3>
+            </div>
+
+          </section>
+        </div>
 
         <section className="sleep">
           <h1 className="title">SLEEP DETAILS</h1>
-
-        <div>
-          <h4>DAY</h4>
-          <h4>WEEK</h4>
-          <h4>MONTH</h4>
-          <h4>YEAR</h4>
-          <h4>ALL</h4>
-        </div> 
-        
-        <hr />
+          <div>
+            <h4>DAY</h4>
+            <h4>WEEK</h4>
+            <h4>MONTH</h4>
+            <h4>YEAR</h4>
+            <h4>ALL</h4>
+          </div> 
+          <hr />
 
         </section>
-
       </div>
     </div>
   );
