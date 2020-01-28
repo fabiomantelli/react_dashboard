@@ -72,7 +72,6 @@ function App() {
           <li><img src={Retangle} alt="Retangle" /></li>
           <li><img src={Retangle2} alt="Retangle2" /></li>
           <li><img src={Pie} alt="Pie" /></li>
-          <li><img src={Pie} alt="Pie" /></li>
           <li><img src={Calendar} alt="Calendar" /></li>
         </ul>  
       </aside>
