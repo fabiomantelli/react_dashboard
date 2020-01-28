@@ -57,6 +57,14 @@
   padding: 15px;
 }
 
+.right-header:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
 /* Container ----- */
 .sidenav {
   display: grid;
