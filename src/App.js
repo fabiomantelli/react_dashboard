@@ -83,14 +83,14 @@ function App() {
           <div>
             <img src={Body} alt="Body" />
           </div>
-
-          <div>
-            <h4>DAY</h4>
-            <h4>WEEK</h4>
-            <h4>MONTH</h4>
-            <h4>YEAR</h4>
-            <h4>ALL</h4>
-          </div>
+          
+          <ul>
+            <li><a href={'/'}>DAY</a></li>
+            <li><a href={'/'}>WEEK</a></li>
+            <li><a href={'/'}>MONTH</a></li>
+            <li><a href={'/'}>YEAR</a></li>
+            <li><a href={'/'}>ALL</a></li>
+          </ul>
 
           <h1 className="title">BODY ENERGY</h1>
           <img src={Graphred} alt="Graphred" id="Graphred" />
@@ -224,13 +224,13 @@ function App() {
 
         <section className="sleep">
           <h1 className="title">SLEEP DETAILS</h1>
-          <div>
-            <h4>DAY</h4>
-            <h4>WEEK</h4>
-            <h4>MONTH</h4>
-            <h4>YEAR</h4>
-            <h4>ALL</h4>
-          </div> 
+          <ul>
+            <li><a href={'/'}>DAY</a></li>
+            <li><a href={'/'}>WEEK</a></li>
+            <li><a href={'/'}>MONTH</a></li>
+            <li><a href={'/'}>YEAR</a></li>
+            <li><a href={'/'}>ALL</a></li>
+          </ul>
           <hr />
 
         </section>
