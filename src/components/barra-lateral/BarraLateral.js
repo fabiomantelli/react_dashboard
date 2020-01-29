@@ -16,23 +16,25 @@ class BarraLateral extends Component {
         return (
             <aside className="sidenav">
                 <div>
-                    <Link to="/">
-                        <img src={Ampulheta} alt="Ampulheta" id="Ampulheta"/>
-                    </Link>
+                    <img src={Ampulheta} alt="Ampulheta" id="Ampulheta"/>
                 </div>
                 
                 <ul>
                     <li>
-                        <Link to="/profile">
+                        <Link to="/">
                             <img src={Retangle} alt="Retangle" />
                         </Link>
                     </li>
                     <li>
-                        <Link to ="/company">
+                        <Link to ="/profile">
                             <img src={Retangle2} alt="Retangle2" />
                         </Link>
                     </li>
-                    <li><img src={Pie} alt="Pie" /></li>
+                    <li>
+                        <Link to ="/company">
+                            <img src={Pie} alt="Pie" />
+                        </Link>
+                    </li>
                     <li><img src={Calendar} alt="Calendar" /></li>
                 </ul>  
             </aside>
