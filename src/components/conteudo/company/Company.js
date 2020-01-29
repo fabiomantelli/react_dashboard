@@ -8,7 +8,7 @@ class Conteudo extends Component {
     render () {
         return (
             <div>
-                <h1>Gutinho mais do que feliz!</h1>
+                <h1>Tela 2!</h1>
             </div>
         );
     }
