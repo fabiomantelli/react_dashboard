@@ -1,0 +1,109 @@
+/* Styles Company */
+
+
+/* Container ----- */
+.body-company {
+    display: grid;
+    grid-column: conteudo;
+    grid-row: body;
+    grid-gap: 15px;
+    grid-template-rows: [overview] 1fr [options] 1fr [itens] 1fr;
+  }
+
+/* Container ----- */
+.company-overview {
+    display: grid;
+    grid-row: overview;
+    grid-gap: 15px;
+    grid-template-columns: [main] 1fr [icons] 1fr;
+}
+
+.main {
+    display: grid;
+    grid-column: main;
+}
+
+.icons {
+    display: grid;
+    grid-column: icons;
+}
+
+
+/* Container ----- */
+.options {
+    display: grid;
+    grid-row: options;
+    grid-template-columns: [marketing] 1fr [finance] 1fr [human-resorces] 1fr;
+    grid-gap: 15px;
+}
+
+.marketing {
+    display: grid;
+    grid-column: marketing;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.finance {
+    display: grid;
+    grid-column: finance;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.human-resorces {
+    display: grid;
+    grid-column: human-resorces;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+/* Container ----- */
+.itens {
+    display: grid;
+    grid-row: itens;
+    grid-template-columns: [stress-details] 1fr [activity-details] 1fr [sleep-details] 1fr [meditation-details] 1fr;
+    grid-gap: 15px;
+}
+
+.stress-details {
+    display: grid;
+    grid-column: stress-details;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.activity-details {
+    display: grid;
+    grid-column: activity-details;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.sleep-details {
+    display: grid;
+    grid-column: sleep-details;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.meditation-details {
+    display: grid;
+    grid-column: meditation-details;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}

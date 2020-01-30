@@ -1,0 +1,76 @@
+/* Styles Profile */
+
+
+/* Container ----- */
+.body-profile {
+    display: grid;
+    grid-column: conteudo;
+    grid-gap: 15px;
+    grid-row: body;
+    grid-template-columns: [user] 1fr [information] 1.2fr;
+  }
+
+/* Container ----- */
+.user {
+display: grid;
+grid-column: user;
+grid-gap: 15px;
+grid-template-rows: [profile] 1fr [personal] 1.4fr;
+}
+
+.profile {
+    display: grid;
+    grid-row: profile;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.personal {
+    display: grid;
+    grid-row: personal;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.information {
+    display: grid;
+    grid-column: information;
+    grid-template-columns: [log1] 1fr [log2] 1fr;
+    grid-template-rows: [log-information] 1fr [team-member] 1fr;
+    grid-gap: 15px;
+}
+
+.log {
+    display: grid;
+    grid-column: log1 / span 2;
+    grid-row: log-information;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+
+}
+
+.team-member {
+    display: grid;
+    grid-column: log1;
+    grid-row: team-member;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
+
+.key-metrics {
+    display: grid;
+    grid-column: log2;
+    grid-row: team-member;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to bottom, #19222f, #002544);
+    padding: 5px;
+}
