@@ -5,7 +5,6 @@
 .body-profile {
     display: grid;
     grid-column: conteudo;
-    grid-gap: 15px;
     grid-row: body;
     grid-template-columns: [user] 1fr [information] 1.2fr;
   }
@@ -14,7 +13,6 @@
 .user {
 display: grid;
 grid-column: user;
-grid-gap: 15px;
 grid-template-rows: [profile] 1fr [personal] 1.4fr;
 }
 
@@ -41,7 +39,6 @@ grid-template-rows: [profile] 1fr [personal] 1.4fr;
     grid-column: information;
     grid-template-columns: [log1] 1fr [log2] 1fr;
     grid-template-rows: [log-information] 1fr [team-member] 1fr;
-    grid-gap: 15px;
 }
 
 .log {
