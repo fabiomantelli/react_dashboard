@@ -18,6 +18,9 @@ import Finance from '../../../assets/company/finance/finance.svg';
 /* Corporate */
 import Corporate from '../../../assets/company/finance/corporate.svg';
 
+/* Sleep Details */
+import ManData from '../../../assets/company/details/sleep_details/man-data.svg';
+
 class Company extends Component {
     render () {
         return (
@@ -224,14 +227,53 @@ class Company extends Component {
 
                     <div className="activity-details">
                         <h1 className="title">ACTIVITY DETAILS</h1>
+                        <h2>PROVIDED BY GARMIN</h2>
                     </div>
 
                     <div className="sleep-details">
                         <h1 className="title">SLEEP DETAILS</h1>
+                        <h2>PROVIDED BY GARMIN</h2>
+
+                        <img src={ManData} alt="Man-Data" />
                     </div>
 
                     <div className="meditation-details">
-                        <h1 className="title">MEDITATION DETAILS</h1>
+                        <div>
+                            <h1 className="title">MEDITATION DETAILS</h1>
+                            <h2>PROVIDED BY GARMIN</h2>
+                        </div>
+
+
+                        <div className="itens-meditation-1">
+                            <div id="green-square" />
+                            <div>
+                                <h1>HR</h1>
+                                <h2>11 sec</h2>
+                            </div>
+                            <div id="blue-icon" />
+                            <div id="rose-icon" />
+                        </div>
+
+                        <div className="itens-meditation-2">
+                            <div id="orange-square" />
+                            <div>
+                                <h1>MKT</h1>
+                                <h2>18 sec</h2>
+                            </div>
+                            <div id="orange-icon" />
+                            <div id="red-icon" />
+                        </div>
+
+                        <div className="itens-meditation-3">
+                            <div id="purple-square" />
+                            <div>
+                                <h1>FN</h1>
+                                <h2>21 sec</h2>
+                            </div>
+                            <div id="purple-icon" />
+                            <div id="green-icon" />
+                        </div>
+
                     </div>
                 </div>
 

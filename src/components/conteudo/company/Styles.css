@@ -429,10 +429,97 @@
     border-radius: 10px;
 }
 
+.sleep-details img {
+    width: 25%;
+}
+
 .meditation-details {
     display: grid;
     grid-column: meditation-details;
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+}
+
+.meditation-details .itens-meditation-1 {
+    display: flex;
+    box-flex-group: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.meditation-details #green-square {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%); 
+}
+
+.meditation-details #blue-icon {
+    width: 62.71px;
+    height: 62.71px;
+    background: linear-gradient(86.53deg, #72C6EF -0.02%, #004E8F 100.02%);
+    border-radius: 8px;
+}
+
+.meditation-details #rose-icon {
+    width: 62.71px;
+    height: 62.71px;
+    background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
+    border-radius: 8px;
+}
+
+.meditation-details .itens-meditation-2 {
+    display: flex;
+    box-flex-group: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.meditation-details #orange-square {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
+}
+
+.meditation-details #orange-icon {
+    width: 62.71px;
+    height: 62.71px;
+    background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
+border-radius: 8px;
+    border-radius: 8px;
+}
+
+.meditation-details #red-icon {
+    width: 62.71px;
+    height: 62.71px;
+    background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
+    border-radius: 8px;
+}
+
+.meditation-details .itens-meditation-3 {
+    display: flex;
+    box-flex-group: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.meditation-details #purple-square {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
+}
+
+.meditation-details #purple-icon {
+    width: 62.71px;
+    height: 62.71px;
+    background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
+    border-radius: 8px;
+}
+
+.meditation-details #green-icon {
+    width: 62.71px;
+    height: 62.71px;
+    background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%);
+    border-radius: 8px;
 }
