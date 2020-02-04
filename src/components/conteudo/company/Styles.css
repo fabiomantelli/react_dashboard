@@ -24,7 +24,7 @@
     grid-gap: 15px;
 }
 
-.main {
+.company-overview-main {
     display: flex;
     flex-direction: row;
     grid-column: main;
@@ -32,7 +32,7 @@
     justify-content: space-evenly;
 }
 
-#weekly {
+#company-overview-weekly {
     width: 218.96px;
     height: 55.1px;
     background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
@@ -40,14 +40,14 @@
     border-radius: 8px;
 }
 
-.icons {
+.company-overview-icons {
     display: grid;
     grid-column: icons;
     justify-items: flex-end;
     align-content: center;
 }
 
-.icons-list {
+.company-overview-icons-list {
     display: flex;
     flex-direction: row;
 } 
@@ -111,7 +111,7 @@
     grid-gap: 15px;
 }
 
-.marketing {
+.options-marketing {
     display: grid;
     grid-column: marketing;
     grid-template-rows: 1fr 4fr 1fr;
@@ -120,23 +120,23 @@
     border-radius: 10px;
 }
 
-.marketing h2 {
+.options-marketing h2 {
     font-size: 0.8em;
     color: #FC3A5E;
 }
 
-.marketing h3 {
+.options-marketing h3 {
     font-size: 0.7em;
 }
 
-.marketing .team-marketing {
+.options-marketing-team {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.marketing .healthy {
+.options-marketing-healthy {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
@@ -144,7 +144,7 @@
     padding-right: 10px;
 }
 
-.marketing #share-button {
+.options-marketing #share-button {
     width: 180px;
     height: 45px;
     background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
@@ -153,11 +153,11 @@
     font-size: 0.8em;
 }    
 
-.marketing div:nth-child(3) {
+.options-marketing div:nth-child(3) {
     justify-self: right;
 }
 
-.finance {
+.options-finance {
     display: grid;
     grid-column: finance;
     background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
@@ -166,22 +166,22 @@
 }
 
 
-.finance h2 {
+.options-finance h2 {
     font-size: 0.8em;
 }
 
-.finance h3 {
+.options-finance h3 {
     font-size: 0.7em;
 }
 
-.finance .team-finance {
+.options-finance-team {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.finance .restorative {
+.options-finance-restorative {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
@@ -189,7 +189,7 @@
     padding-right: 10px;
 }
 
-.finance #buy-tickets-button {
+.options-finance #buy-tickets-button {
     width: 180px;
     height: 45px;
     background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
@@ -198,12 +198,12 @@
     font-size: 0.8em;
 }    
 
-.finance div:nth-child(3) {
+.options-finance div:nth-child(3) {
     justify-self: right;
 }
 
 
-.human-resorces {
+.options-human-resorces {
     display: grid;
     grid-column: human;
     background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
@@ -212,22 +212,22 @@
 }
 
 
-.human-resorces h2 {
+.options-human-resorces h2 {
     font-size: 0.8em;
 }
 
-.human-resorces h3 {
+.options-human-resorces h3 {
     font-size: 0.7em;
 }
 
-.human-resorces .team-resorcers {
+.options-human-resorces-team {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.human-resorces .corporate {
+.options-human-resorces-corporate {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
@@ -235,7 +235,7 @@
     padding-right: 10px;
 }
 
-.human-resorces #get-started-button {
+.options-human-resorces #get-started-button {
     width: 180px;
     height: 45px;
     background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
@@ -244,7 +244,7 @@
     font-size: 0.8em;
 }    
 
-.human-resorces div:nth-child(3) {
+.options-human-resorces div:nth-child(3) {
     justify-self: right;
 }
 
@@ -263,7 +263,7 @@
     font-size: .7em;
 }
 
-.top1 {
+.top-marketing {
     display: grid;
     grid-column: top1;
     background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
@@ -276,14 +276,14 @@
     width: 250px;
 }
 
-.top1 .main-title {
+.top-marketing .main-title {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     
 }
 
-.top2 {
+.top-finance {
     display: grid;
     grid-column: top2;
     background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
@@ -296,13 +296,13 @@
     width: 250px;
 }
 
-.top2 .main-title {
+.top-finance .main-title {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.top3 {
+.top-human-resorces {
     display: grid;
     grid-column: top3;
     background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
@@ -316,7 +316,7 @@
 }
 
 
-.top3 .main-title {
+.top-human-resorces .main-title {
     display: flex;
     align-items: center;
     justify-content: space-evenly;

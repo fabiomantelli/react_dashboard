@@ -26,15 +26,15 @@ class Company extends Component {
         return (
             <div className="body-company">
                 <div className="company-overview">
-                    <div className="main">
+                    <div className="company-overview-main">
                         <h1>COMPANY OVERVIEW</h1>
-                        <button id="weekly">WEEKLY</button>
+                        <button id="company-overview-weekly">WEEKLY</button>
                         
                     </div>
 
-                    <div className="icons">
+                    <div className="company-overview-icons">
                         <h1>My Teams</h1>
-                        <div className="icons-list">
+                        <div className="company-overview-icons-list">
                             <div id="mkt">MKT</div>
                             <div id="fn">FN</div>
                             <div id="hr">HR</div>
@@ -44,13 +44,13 @@ class Company extends Component {
                 </div>
 
                 <div className="options">
-                    <div className="marketing">
-                        <div className="team-marketing">
+                    <div className="options-marketing">
+                        <div className="options-marketing-team">
                             <h1 className="title">MARKETING</h1>
                             <h2>This team is falling asleep at the desk</h2>
                         </div>
 
-                        <div className="healthy">
+                        <div className="options-marketing-healthy">
                             
                             <div id="woman-main"><img src={Woman} alt="Woman"></img></div>
                             
@@ -69,13 +69,13 @@ class Company extends Component {
                         
                     </div>
 
-                    <div className="finance">
-                        <div className="team-finance">
+                    <div className="options-finance">
+                        <div className="options-finance-team">
                             <h1 className="title">FINANCE</h1>
                             <h2>This team is pulling their hair out</h2>
                         </div>
 
-                        <div className="restorative">
+                        <div className="options-finance-restorative">
                             
                             <div id="finance-main"><img src={Finance} alt="Finance"></img></div>
                             
@@ -97,13 +97,13 @@ class Company extends Component {
                         </div>
                     </div>
 
-                    <div className="human-resorces">
-                    <div className="team-resorcers">
+                    <div className="options-human-resorces">
+                    <div className="options-human-resorces-team">
                             <h1 className="title">HUMAN RESORCES</h1>
                             <h2>This team needs a little workout!</h2>
                         </div>
 
-                        <div className="corporate">
+                        <div className="options-human-resorces-corporate">
                             
                             <div id="corporate-main"><img src={Corporate} alt="Corporate"></img></div>
                             
@@ -132,7 +132,7 @@ class Company extends Component {
 
                 <div className="tops">
 
-                    <div className="top1">
+                    <div className="top-marketing">
                         
                         <div className="main-title">
                             <h1 className="title">TOP PERFORMERS</h1>
@@ -150,7 +150,7 @@ class Company extends Component {
                     </div>
 
 
-                    <div className="top2">
+                    <div className="top-finance">
                          <div className="main-title">
                             <h1 className="title">TOP PERFORMERS</h1>
                             <h3>See complete list</h3>
@@ -167,7 +167,7 @@ class Company extends Component {
                     </div>
 
 
-                    <div className="top3">
+                    <div className="top-human-resorces">
                     <div className="main-title">
                             <h1 className="title">TOP PERFORMERS</h1>
                             <h3>See complete list</h3>
@@ -234,7 +234,7 @@ class Company extends Component {
                         <h1 className="title">SLEEP DETAILS</h1>
                         <h2>PROVIDED BY GARMIN</h2>
 
-                        <img src={ManData} alt="Man-Data" />
+                        <img className="sleep-details man-data" src={ManData} alt="Man-Data" />
                     </div>
 
                     <div className="meditation-details">

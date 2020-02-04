@@ -1,71 +1,202 @@
 /* Styles Profile */
 
+.title {
+  font-size: 1em;
+}
 
 /* Container ----- */
 .body-profile {
     display: grid;
     grid-column: conteudo;
     grid-row: body;
-    grid-template-columns: [user] 1fr [information] 1.2fr;
+    grid-template-columns: [user] 1fr [team] 1fr;
+    grid-gap: 15px;
   }
 
+  
 /* Container ----- */
 .user {
 display: grid;
 grid-column: user;
+grid-gap: 15px;
 grid-template-rows: [profile] 1fr [personal] 1.4fr;
 }
 
 .profile {
     display: grid;
     grid-row: profile;
+    grid-template-rows: [title-profile] 1fr [information-user] 4fr;
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(to bottom, #19222f, #002544);
     padding: 5px;
 }
 
+.profile #title {
+    display: grid;
+    grid-row: title-profile;
+}
+
+.profile #information-user {
+    display: grid;
+    grid-row: information-user;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile h2 {
+    font-size: 0.7em;
+}
+
+.profile h3 {
+    font-size: 0.5em;
+}
+
+#cco {
+    width: 69px;
+    height: 36px;  
+    border: 1px solid #C7D7E5;
+    box-sizing: border-box;
+    border-radius: 5px;  
+}
+
+#marketing-team {
+    width: 191px;
+    height: 36px;
+    border: 1px solid #C7D7E5;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.profile #plus {
+    height: 37px;
+    width: 37px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(148.06deg, #19222F -28.9%, #002544 108.17%);
+    border: 1px solid #C7D7E5;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  
+  #plus::before {
+      display: block;
+      content: '+';
+  }
+  
+
+.profile #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Container ----- */
 .personal {
     display: grid;
     grid-row: personal;
+    grid-template-rows: [main-personal] 1fr [manage-stress] 2fr [steps-manager] 2fr;
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(to bottom, #19222f, #002544);
     padding: 5px;
 }
 
+.personal .main-personal {
+    display: grid;
+    grid-row: main-personal;
+}
+
+.personal .manage-stress {
+    display: grid;
+    grid-row: manage-stress;
+    grid-template-columns: 1fr 1fr;
+}
+
+.personal .steps-manager {
+    display: grid;
+    grid-row: steps-manager;
+    grid-template-columns: 1fr 1fr;
+}
+
+.personal h2 {
+    font-size: 0.9em;
+}
+
+.personal h3 {
+    font-size: 0.8em;
+}
+
+.personal h4 {
+    font-size: 0.6em;
+}
+
+/* Container ----- */
 .information {
     display: grid;
-    grid-column: information;
+    grid-column: team;
+    grid-gap: 15px;
     grid-template-columns: [log1] 1fr [log2] 1fr;
-    grid-template-rows: [log-information] 1fr [team-member] 1fr;
+    grid-template-rows: [log-information] 1fr [team-key] 1fr;
 }
+
 
 .log {
     display: grid;
     grid-column: log1 / span 2;
     grid-row: log-information;
     border-radius: 10px;
+    grid-template-rows: 1fr 5fr;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(to bottom, #19222f, #002544);
     padding: 5px;
 
 }
 
+
+.log #grid-log {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.log #grid-log > span {
+    padding: 8px 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 .team-member {
     display: grid;
     grid-column: log1;
-    grid-row: team-member;
+    grid-row: team-key;
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(to bottom, #19222f, #002544);
     padding: 5px;
 }
 
+
+.team-member #grid-team-member {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.team-member #grid-team-member > span {
+    padding: 8px 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 .key-metrics {
     display: grid;
     grid-column: log2;
-    grid-row: team-member;
+    grid-row: team-key;
+    grid-template-rows: repeat(5, 1fr);
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(to bottom, #19222f, #002544);

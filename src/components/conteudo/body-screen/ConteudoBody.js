@@ -184,11 +184,11 @@ class Conteudo extends Component {
             <section className="sleep">
                 <h1 className="title">SLEEP DETAILS</h1>
                 <ul>
-                <li><a href={'/'}>DAY</a></li>
-                <li><a href={'/'}>WEEK</a></li>
-                <li><a href={'/'}>MONTH</a></li>
-                <li><a href={'/'}>YEAR</a></li>
-                <li><a href={'/'}>ALL</a></li>
+                    <li><a href={'/'}>DAY</a></li>
+                    <li><a href={'/'}>WEEK</a></li>
+                    <li><a href={'/'}>MONTH</a></li>
+                    <li><a href={'/'}>YEAR</a></li>
+                    <li><a href={'/'}>ALL</a></li>
                 </ul>
                 <hr />
 
