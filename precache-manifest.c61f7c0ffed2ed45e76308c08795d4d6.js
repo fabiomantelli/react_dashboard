@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a39576c98f98f618343cb1cba679ff2",
+    "revision": "76178dbf8edbf19a767b588e9189b1d8",
     "url": "/react_dashboard/index.html"
   },
   {
-    "revision": "d49f55be4b6b14e272c7",
+    "revision": "d7df115f20006038f523",
     "url": "/react_dashboard/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "30019b88e46ec6a4f9d5",
-    "url": "/react_dashboard/static/css/main.f83f9cfb.chunk.css"
+    "revision": "536c5a020972b9f16db2",
+    "url": "/react_dashboard/static/css/main.7c24e309.chunk.css"
   },
   {
-    "revision": "d49f55be4b6b14e272c7",
-    "url": "/react_dashboard/static/js/2.81c11bb7.chunk.js"
+    "revision": "d7df115f20006038f523",
+    "url": "/react_dashboard/static/js/2.413a116f.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/react_dashboard/static/js/2.81c11bb7.chunk.js.LICENSE"
+    "url": "/react_dashboard/static/js/2.413a116f.chunk.js.LICENSE"
   },
   {
-    "revision": "30019b88e46ec6a4f9d5",
-    "url": "/react_dashboard/static/js/main.cd082907.chunk.js"
+    "revision": "536c5a020972b9f16db2",
+    "url": "/react_dashboard/static/js/main.2fe0a17d.chunk.js"
   },
   {
     "revision": "a4969e909d4e67805873",
@@ -144,6 +144,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react_dashboard/static/media/men6.040a5a20.svg"
   },
   {
+    "revision": "30296dba2d4f1b4630f84d55d1237c8b",
+    "url": "/react_dashboard/static/media/people1.30296dba.svg"
+  },
+  {
+    "revision": "d64fe2e268c63201722f496fa18b5be6",
+    "url": "/react_dashboard/static/media/people2.d64fe2e2.svg"
+  },
+  {
     "revision": "6a6925b78bb4276edbc6bdb600e2afd4",
     "url": "/react_dashboard/static/media/pie-icon.6a6925b7.svg"
   },
@@ -166,6 +174,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3e59cec40b1377639f1fd376a8b7de0b",
     "url": "/react_dashboard/static/media/trigo-fig.3e59cec4.svg"
+  },
+  {
+    "revision": "04722cf4f38f868c985f5b7f02025870",
+    "url": "/react_dashboard/static/media/user.04722cf4.svg"
   },
   {
     "revision": "7ce7b66a5ab547ac7e58daa46fabd01b",
