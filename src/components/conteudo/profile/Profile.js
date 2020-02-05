@@ -63,7 +63,7 @@ class Conteudo extends Component {
                         </div>
 
                         <div className="steps-manager">
-                        <img src={People2} alt="People2" />
+                          <img src={People2} alt="People2" />
                             <div>
                                 <h2>5 Steps to be a better manager</h2>
                                 <h3>Integer consectetur uma quam, ac maximus turpis faucibus id.
@@ -137,9 +137,7 @@ class Conteudo extends Component {
                     
 
                     <div className="team-member">
-                        <div>
-                            <h1 className="title">TEAM MEMBER</h1>
-                        </div>
+                        <h1 className="title">TEAM MEMBER</h1>
 
                         <div id="grid-team-member">
                             <span>
@@ -189,8 +187,6 @@ class Conteudo extends Component {
 
                     <div className="key-metrics">
                         <h1 className="title">KEY METRICS</h1>
-     
-
                         <div>
                             <h2>Jeremy is very good at meditation</h2>
                         </div>
@@ -206,10 +202,8 @@ class Conteudo extends Component {
                             <li><a href={'/'}>YEAR</a></li>
                             <li><a href={'/'}>ALL</a></li>
                         </ul>
-
-                        <div>
-                            <h2>Graph</h2>
-                        </div>
+                        <h2>Graph</h2>
+                        
                     </div>
                 </div>
             </div>

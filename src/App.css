@@ -21,7 +21,7 @@
   grid-template-rows: [header-page] 100px [body] 100vh;
   grid-gap: 15px;
   /*align-items: stretch; Alinha conforme o limite inferior de rolagem*/ 
-  /*background-image: linear-gradient(to top, #19222f, #002544);*/
+  background-image: linear-gradient(to top, #19222f, #002544);
   padding-right: 15px;
   padding-bottom: 15px;
   align-items: strech;
