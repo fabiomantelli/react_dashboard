@@ -13,13 +13,16 @@ import User from '../../../assets/profile/user/user.svg';
 import People1 from '../../../assets/profile/personal/people1.svg';
 import People2 from '../../../assets/profile/personal/people2.svg';
 
+/* Key Metrics */
+import Graph from '../../../assets/profile/key_metrics/body-graph-red.svg';
+
 class Conteudo extends Component {
     render () {
         return (
             <div className="body-profile">
                 <div className="user">
                     <div className="profile">
-                        <h1 className="title">Profile</h1>
+                        <h1 className="title">PROFILE</h1>
 
                         <div id="information-user">
                             <img src={User} alt="User" />
@@ -84,6 +87,7 @@ class Conteudo extends Component {
                 <div className="information">
                     <div className="log">
                         <h1 className="title">LOG INFORMATION</h1>
+                        <h2> See whats been going on lately</h2>
 
                         <div id="grid-log">
                             <span>
@@ -202,7 +206,7 @@ class Conteudo extends Component {
                             <li><a href={'/'}>YEAR</a></li>
                             <li><a href={'/'}>ALL</a></li>
                         </ul>
-                        <h2>Graph</h2>
+                        <img src={Graph} alt="Graph" />
                         
                     </div>
                 </div>

@@ -9,8 +9,8 @@
 .body-company {
     display: grid;
     grid-column: conteudo;
-    grid-gap: 15px;
-    grid-template-rows: [line1] 2fr [line2] 2fr [line3] 0.5fr [line4] 2fr;
+    grid-row: body;
+    grid-template-rows: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr;
     grid-row: body;
     height: 100vh;
     
@@ -21,7 +21,6 @@
     display: grid;
     grid-row: line1;
     grid-template-columns: [main] 2fr [icons] 1fr;
-    grid-gap: 15px;
 }
 
 .company-overview-main {
@@ -114,10 +113,10 @@
 .options-marketing {
     display: grid;
     grid-column: marketing;
-    grid-template-rows: 1fr 4fr 1fr;
     background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 15px;
 }
 
 .options-marketing h2 {
@@ -138,7 +137,6 @@
 
 .options-marketing-healthy {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     margin-bottom: 100px;
     padding-right: 10px;
@@ -163,6 +161,7 @@
     background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 15px;
 }
 
 
@@ -209,8 +208,8 @@
     background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 15px;
 }
-
 
 .options-human-resorces h2 {
     font-size: 0.8em;
@@ -244,23 +243,18 @@
     font-size: 0.8em;
 }    
 
-.options-human-resorces div:nth-child(3) {
-    justify-self: right;
-}
-
 .tops {
     display: grid;
     grid-row: line3;
     grid-template-columns: [top1] 1fr [top2] 1fr [top3] 1fr;
-    grid-gap: 15px;
 }
 
 .tops img {
-    width: 15%;
+    width: 10%;
 }
 
 .tops h3 {
-    font-size: .7em;
+    font-size: .5em;
 }
 
 .top-marketing {
@@ -273,7 +267,7 @@
     margin-top: -100px;
     margin-left: 30px;
     margin-right: 80px;
-    width: 250px;
+    padding: 10px;
 }
 
 .top-marketing .main-title {
@@ -293,7 +287,7 @@
     margin-top: -100px;
     margin-left: 30px;
     margin-right: 80px;
-    width: 250px;
+    padding: 10px;
 }
 
 .top-finance .main-title {
@@ -312,7 +306,7 @@
     margin-top: -100px;
     margin-left: 30px;
     margin-right: 80px;
-    width: 250px;
+    padding: 10px;
 }
 
 
@@ -332,7 +326,6 @@
 .stress-details {
     display: grid;
     grid-column: stress-details;
-    grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr;
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -356,8 +349,8 @@
 }
 
 .details #circle-orange {
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
     border-radius: 50px;   
 }
@@ -378,8 +371,8 @@
 }
 
 .details #circle-purple {
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
     border-radius: 50px;   
 }
@@ -400,8 +393,8 @@
 }
 
 .details #circle-blue {
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(90deg, #6E99FE -0.14%, #00FFFF 99.94%);
     border-radius: 50px;   
 }
@@ -419,18 +412,21 @@
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 15px;
 }
 
 .sleep-details {
     display: grid;
     grid-column: sleep-details;
+    grid-template-rows: 1fr 1fr;
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 15px;
 }
 
 .sleep-details img {
-    width: 25%;
+    width: 10%;
 }
 
 .meditation-details {
@@ -439,6 +435,7 @@
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 15px;
 }
 
 .meditation-details .itens-meditation-1 {
@@ -448,6 +445,14 @@
     justify-content: space-evenly;
 }
 
+.meditation-details .itens-meditation-1 h1 {
+    font-size: 0.8em;
+}
+
+.meditation-details .itens-meditation-1 h2 {
+    font-size: 0.6em;
+}
+
 .meditation-details #green-square {
     width: 15px;
     height: 15px;
@@ -455,15 +460,15 @@
 }
 
 .meditation-details #blue-icon {
-    width: 62.71px;
-    height: 62.71px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(86.53deg, #72C6EF -0.02%, #004E8F 100.02%);
     border-radius: 8px;
 }
 
 .meditation-details #rose-icon {
-    width: 62.71px;
-    height: 62.71px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
     border-radius: 8px;
 }
@@ -475,6 +480,14 @@
     justify-content: space-evenly;
 }
 
+.meditation-details .itens-meditation-2 h1 {
+    font-size: 0.8em;
+}
+
+.meditation-details .itens-meditation-2 h2 {
+    font-size: 0.6em;
+}
+
 .meditation-details #orange-square {
     width: 15px;
     height: 15px;
@@ -482,16 +495,16 @@
 }
 
 .meditation-details #orange-icon {
-    width: 62.71px;
-    height: 62.71px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
 border-radius: 8px;
     border-radius: 8px;
 }
 
 .meditation-details #red-icon {
-    width: 62.71px;
-    height: 62.71px;
+    width: 30px;
+    height: 30px;
     background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
     border-radius: 8px;
 }
@@ -503,6 +516,14 @@ border-radius: 8px;
     justify-content: space-evenly;
 }
 
+.meditation-details .itens-meditation-3 h1 {
+    font-size: 0.8em;
+}
+
+.meditation-details .itens-meditation-3 h2 {
+    font-size: 0.6em;
+}
+
 
 .meditation-details #purple-square {
     width: 15px;
@@ -511,15 +532,15 @@ border-radius: 8px;
 }
 
 .meditation-details #purple-icon {
-    width: 62.71px;
-    height: 62.71px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
     border-radius: 8px;
 }
 
 .meditation-details #green-icon {
-    width: 62.71px;
-    height: 62.71px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%);
     border-radius: 8px;
 }

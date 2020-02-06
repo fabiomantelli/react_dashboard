@@ -233,16 +233,12 @@ class Company extends Component {
                     <div className="sleep-details">
                         <h1 className="title">SLEEP DETAILS</h1>
                         <h2>PROVIDED BY GARMIN</h2>
-
-                        <img className="sleep-details man-data" src={ManData} alt="Man-Data" />
+                        <img src={ManData} alt="ManData" />
                     </div>
 
                     <div className="meditation-details">
-                        <div>
-                            <h1 className="title">MEDITATION DETAILS</h1>
-                            <h2>PROVIDED BY GARMIN</h2>
-                        </div>
-
+                        <h1 className="title">MEDITATION DETAILS</h1>
+                        <h2>PROVIDED BY GARMIN</h2>
 
                         <div className="itens-meditation-1">
                             <div id="green-square" />
