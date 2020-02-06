@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react_dashboard/static/css/main.865cee22.chunk.css",
-    "main.js": "/react_dashboard/static/js/main.313e991c.chunk.js",
-    "main.js.map": "/react_dashboard/static/js/main.313e991c.chunk.js.map",
+    "main.css": "/react_dashboard/static/css/main.dc558b54.chunk.css",
+    "main.js": "/react_dashboard/static/js/main.838720d8.chunk.js",
+    "main.js.map": "/react_dashboard/static/js/main.838720d8.chunk.js.map",
     "runtime-main.js": "/react_dashboard/static/js/runtime-main.c49510eb.js",
     "runtime-main.js.map": "/react_dashboard/static/js/runtime-main.c49510eb.js.map",
     "static/css/2.764ccc25.chunk.css": "/react_dashboard/static/css/2.764ccc25.chunk.css",
-    "static/js/2.413a116f.chunk.js": "/react_dashboard/static/js/2.413a116f.chunk.js",
-    "static/js/2.413a116f.chunk.js.map": "/react_dashboard/static/js/2.413a116f.chunk.js.map",
+    "static/js/2.5fc7c9dd.chunk.js": "/react_dashboard/static/js/2.5fc7c9dd.chunk.js",
+    "static/js/2.5fc7c9dd.chunk.js.map": "/react_dashboard/static/js/2.5fc7c9dd.chunk.js.map",
     "index.html": "/react_dashboard/index.html",
-    "precache-manifest.45da7ed3592cc0104459c5873253edc9.js": "/react_dashboard/precache-manifest.45da7ed3592cc0104459c5873253edc9.js",
+    "precache-manifest.408ec627e84f2bdd45261a3c48959de6.js": "/react_dashboard/precache-manifest.408ec627e84f2bdd45261a3c48959de6.js",
     "service-worker.js": "/react_dashboard/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/react_dashboard/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.865cee22.chunk.css.map": "/react_dashboard/static/css/main.865cee22.chunk.css.map",
-    "static/js/2.413a116f.chunk.js.LICENSE": "/react_dashboard/static/js/2.413a116f.chunk.js.LICENSE",
+    "static/css/main.dc558b54.chunk.css.map": "/react_dashboard/static/css/main.dc558b54.chunk.css.map",
+    "static/js/2.5fc7c9dd.chunk.js.LICENSE": "/react_dashboard/static/js/2.5fc7c9dd.chunk.js.LICENSE",
     "static/media/alex.svg": "/react_dashboard/static/media/alex.05581040.svg",
     "static/media/ampulheta.svg": "/react_dashboard/static/media/ampulheta.4e3a33ce.svg",
     "static/media/bell-icon.svg": "/react_dashboard/static/media/bell-icon.2a86977b.svg",
@@ -60,8 +60,8 @@
   "entrypoints": [
     "static/js/runtime-main.c49510eb.js",
     "static/css/2.764ccc25.chunk.css",
-    "static/js/2.413a116f.chunk.js",
-    "static/css/main.865cee22.chunk.css",
-    "static/js/main.313e991c.chunk.js"
+    "static/js/2.5fc7c9dd.chunk.js",
+    "static/css/main.dc558b54.chunk.css",
+    "static/js/main.838720d8.chunk.js"
   ]
 }
