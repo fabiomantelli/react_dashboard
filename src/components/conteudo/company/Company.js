@@ -79,15 +79,11 @@ class Company extends Component {
                             
                             <div id="finance-main"><img src={Finance} alt="Finance"></img></div>
                             
-                            <div>
-                                <h4>Thu, Jan 30, 7:00 PM</h4>
-                                <h2><strong>Restorative Yoga/Reset the Mind Body e Spirit</strong></h2>
-                                <h3>
-                                    Welcome Angels Wellness Centre Inc. Mississauga, ON
-                                </h3>
-                                <h3>
-                                    Starts at CA $ 16.00
-                                </h3>
+                            <div id="text-finance">
+                                <h2 id="date-finance"><strong>Thu, Jan 30, 7:00 PM</strong></h2>
+                                <h3>Restorative Yoga/Reset the Mind Body e Spirit</h3>
+                                <h3>Welcome Angels Wellness Centre Inc. Mississauga, ON</h3>
+                                <h3>Starts at CA $ 16.00</h3>
                             </div>
 
                         </div>
@@ -113,13 +109,8 @@ class Company extends Component {
                                     Give members of your organization the good life with exclusive
                                     Corporate Memberships that help them stay healthy for less.
                                 </h3>
-                                <h3>
-                                    15 min
-                                </h3>
-                                <h3>
-                                    5 min
-                                </h3>
-
+                                <h3>15 min</h3>
+                                <h3>5 min</h3>
                             </div>
 
                         </div>
@@ -185,8 +176,10 @@ class Company extends Component {
 
                 <div className="details">
                     <div className="stress-details">
-                        <h1 className="title">Stress</h1>
-                        <h2>PROVIDED BY GARMIN</h2>
+                        <div className="title-details">
+                            <h1 className="title">Stress</h1>
+                            <h2>PROVIDED BY GARMIN</h2>
+                        </div>
 
                         <div id="itens-orange">
                             <div id="circle-orange"></div>
@@ -226,19 +219,28 @@ class Company extends Component {
                     </div>
 
                     <div className="activity-details">
-                        <h1 className="title">ACTIVITY DETAILS</h1>
-                        <h2>PROVIDED BY GARMIN</h2>
+                        <div className="title-details">
+                            <h1 className="title">ACTIVITY DETAILS</h1>
+                            <h2>PROVIDED BY GARMIN</h2>
+                        </div>
+                        <div>
+                            <h2>Future Content</h2>
+                        </div>
                     </div>
 
                     <div className="sleep-details">
-                        <h1 className="title">SLEEP DETAILS</h1>
-                        <h2>PROVIDED BY GARMIN</h2>
+                        <div className="title-details">
+                            <h1 className="title">SLEEP DETAILS</h1>
+                            <h2>PROVIDED BY GARMIN</h2>
+                        </div>
                         <img src={ManData} alt="ManData" />
                     </div>
 
                     <div className="meditation-details">
-                        <h1 className="title">MEDITATION DETAILS</h1>
-                        <h2>PROVIDED BY GARMIN</h2>
+                        <div className="title-details">
+                            <h1 className="title">MEDITATION DETAILS</h1>
+                            <h2>PROVIDED BY GARMIN</h2>
+                        </div>
 
                         <div className="itens-meditation-1">
                             <div id="green-square" />

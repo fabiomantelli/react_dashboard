@@ -16,6 +16,16 @@ import People2 from '../../../assets/profile/personal/people2.svg';
 /* Key Metrics */
 import Graph from '../../../assets/profile/key_metrics/body-graph-red.svg';
 
+// Meditation
+import Icon1 from '../../../assets/profile/log_information/icon1.svg';
+import Icon2 from '../../../assets/profile/log_information/icon2.svg';
+import Icon3 from '../../../assets/profile/log_information/icon3.svg';
+import Icon4 from '../../../assets/profile/log_information/icon4.svg';
+import Icon5 from '../../../assets/profile/log_information/icon5.svg';
+
+// Team Member
+import Man from '../../..//assets/profile/team_member/man.svg';
+
 class Conteudo extends Component {
     render () {
         return (
@@ -37,15 +47,19 @@ class Conteudo extends Component {
                                     <h2 id="marketing-team">MARKETING TEAM</h2>
                                     <div id="plus" />
                                 </div>
-                                <FontAwesomeIcon icon={faTwitter} />
-                                <FontAwesomeIcon icon={faLinkedin} />
+
+                                <div id="twitter-linkedin">
+                                    <FontAwesomeIcon icon={faTwitter} />
+                                    <FontAwesomeIcon icon={faLinkedin} />
+                                </div>
+                               
                             </div>
                         </div>
                     </div>
                     
                     <div className="personal">
                         <div className="main-personal">
-                            <h1 className="title">Personal</h1>
+                            <h1 className="title">PERSONAL RECOMENDATIONS</h1>
                             <h2>Based on his metrics, this is the article we would suggest him to read and get some insights.</h2>
                         </div>
                         <div className="manage-stress">
@@ -57,10 +71,10 @@ class Conteudo extends Component {
                                     Duis quis mi varius, luctus lorem ut, elementum lectus.
                                     Donec sit amet nibh pellentesque.
                                 </h3>
-                                <div>
-                                    <h4>Topics: </h4>
-                                    <h4>MEDITATION</h4>
-                                    <h4>STRESS</h4>
+                                <div id="manage-stress-box">
+                                    <h3>Topics: </h3>
+                                    <h2 id="meditation-box">MEDITATION</h2>
+                                    <h2 id="stress-box">STRESS</h2>
                                 </div>
                             </div>
                         </div>
@@ -74,10 +88,10 @@ class Conteudo extends Component {
                                     Duis quis mi varius, luctus lorem ut, elementum lectus.
                                     Donec sit amet nibh pellentesque.
                                 </h3>
-                                <div>
-                                    <h4>Topics: </h4>
-                                    <h4>BUSINESS</h4>
-                                    <h4>ACTIVITIES</h4>
+                                <div id="steps-manager-box">
+                                    <h3>Topics: </h3>
+                                    <h2 id="business-box">BUSINESS</h2>
+                                    <h2 id="activities-box">ACTIVITIES</h2>
                                 </div>
                             </div>
                         </div>
@@ -106,31 +120,31 @@ class Conteudo extends Component {
                                 <strong>RANKING</strong>
                             </span>
 
-                            <span>Sleep</span>
+                            <span><img src={Icon1} alt="Icon1" />Sleep</span>
                             <span>Bad</span>
                             <span>01/21/2020</span>
                             <span>-6.4%</span>
                             <span>52</span>
 
-                            <span>Heart</span>
+                            <span><img src={Icon2} alt="Icon2" />Heart</span>
                             <span>Bad</span>
                             <span>01/21/2020</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Stress</span>
+                            <span><img src={Icon3} alt="Icon3" />Stress</span>
                             <span>Good</span>
                             <span>01/21/2020</span>
                             <span>2.3%</span>
                             <span>52</span>
 
-                            <span>Healthy</span>
+                            <span><img src={Icon4} alt="Icon4" />Healthy</span>
                             <span>Bad</span>
                             <span>01/21/2020</span>
                             <span>-6.4%</span>
                             <span>21</span>
 
-                            <span>Meditation</span>
+                            <span><img src={Icon5} alt="Icon5" />Meditation</span>
                             <span>Good</span>
                             <span>01/21/2020</span>
                             <span>30%</span>
@@ -141,7 +155,16 @@ class Conteudo extends Component {
                     
 
                     <div className="team-member">
-                        <h1 className="title">TEAM MEMBER</h1>
+                        <div className="team-member-top">
+                            <h1 className="title">TEAM MEMBER</h1>
+                            
+                            <div className="category-team">
+                                <h3>Category</h3>
+                                <div id="blue-icon" />
+                            </div>
+
+                        </div>
+
 
                         <div id="grid-team-member">
                             <span>
@@ -154,35 +177,35 @@ class Conteudo extends Component {
                                 <strong>RANK</strong>
                             </span>
                             
-                            <span>Bessie Wilson</span>
+                            <span><img src={Man} alt="Man" />Bessie Wilson</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Floyd Lane</span>
+                            <span><img src={Man} alt="Man" />Floyd Lane</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Bessie Wilson</span>
+                            <span><img src={Man} alt="Man" />Bessie Wilson</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Floyd Lane</span>
+                            <span><img src={Man} alt="Man" />Floyd Lane</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Bessie Wilson</span>
+                            <span><img src={Man} alt="Man" />Bessie Wilson</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Floyd Lane</span>
+                            <span><img src={Man} alt="Man" />Floyd Lane</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Bessie Wilson</span>
+                            <span><img src={Man} alt="Man" />Bessie Wilson</span>
                             <span>-15%</span>
                             <span>32</span>
 
-                            <span>Floyd Lane</span>
+                            <span><img src={Man} alt="Man" />Floyd Lane</span>
                             <span>-15%</span>
                             <span>32</span>
                         </div>
@@ -190,13 +213,21 @@ class Conteudo extends Component {
                     </div>
 
                     <div className="key-metrics">
-                        <h1 className="title">KEY METRICS</h1>
-                        <div>
-                            <h2>Jeremy is very good at meditation</h2>
+                        <div className="key-metrics-top">
+                            <h1 className="title">KEY METRICS</h1>
+                            
+                            <div className="category-key">
+                                <h3>Category</h3>
+                                <div id="rose-icon" />
+                            </div>
                         </div>
                         
-                        <div>
-                            <h2>Jeremy is pulling his hair out</h2>
+                        <div id="energy-key">
+                            <h2>Jeremy has more energy this week</h2>
+                        </div>
+                        
+                        <div id="active-key">
+                            <h3>Jeremy has been less active this week</h3>
                         </div>
 
                         <ul>

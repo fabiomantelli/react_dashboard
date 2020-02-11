@@ -10,7 +10,7 @@
     display: grid;
     grid-column: conteudo;
     grid-row: body;
-    grid-template-rows: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr;
+    grid-template-rows: [line1] 1fr [line2] 3fr [line3] 1.5fr [line4] 4fr;
     grid-row: body;
     height: 100vh;
     
@@ -137,10 +137,12 @@
 
 .options-marketing-healthy {
     display: grid;
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     margin-bottom: 100px;
     padding-right: 10px;
 }
+
 
 .options-marketing #share-button {
     width: 180px;
@@ -167,11 +169,13 @@
 
 .options-finance h2 {
     font-size: 0.8em;
+    color: #FC3A5E;
 }
 
 .options-finance h3 {
     font-size: 0.7em;
 }
+
 
 .options-finance-team {
     display: flex;
@@ -186,6 +190,10 @@
     align-items: center;
     margin-bottom: 100px;
     padding-right: 10px;
+}
+
+#date-finance strong {
+    color: #2AF598;
 }
 
 .options-finance #buy-tickets-button {
@@ -213,6 +221,7 @@
 
 .options-human-resorces h2 {
     font-size: 0.8em;
+    color: #FC3A5E;
 }
 
 .options-human-resorces h3 {
@@ -243,6 +252,10 @@
     font-size: 0.8em;
 }    
 
+.options-human-resorces div:nth-child(3) {
+    justify-self: right;
+}
+
 .tops {
     display: grid;
     grid-row: line3;
@@ -258,15 +271,12 @@
 }
 
 .top-marketing {
-    display: grid;
     grid-column: top1;
     background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    margin-top: -100px;
-    margin-left: 30px;
-    margin-right: 80px;
+    margin: -100px 50% 100px 5%;
     padding: 10px;
 }
 
@@ -284,9 +294,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    margin-top: -100px;
-    margin-left: 30px;
-    margin-right: 80px;
+    margin: -100px 50% 100px 5%;
     padding: 10px;
 }
 
@@ -303,9 +311,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    margin-top: -100px;
-    margin-left: 30px;
-    margin-right: 80px;
+    margin: -100px 50% 100px 5%;
     padding: 10px;
 }
 
@@ -323,13 +329,19 @@
     grid-gap: 15px;
 }
 
+.title-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .stress-details {
     display: grid;
     grid-column: stress-details;
+    grid-template-rows: 1fr repeat(3, 3fr);
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    padding: 15px;
 }
 
 .details h2 {
@@ -409,6 +421,7 @@
 .activity-details {
     display: grid;
     grid-column: activity-details;
+    grid-template-rows: 1fr 9fr;
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -418,7 +431,7 @@
 .sleep-details {
     display: grid;
     grid-column: sleep-details;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 9fr;
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -426,12 +439,15 @@
 }
 
 .sleep-details img {
-    width: 10%;
+    width: 20%;
+    align-self: center;
+    justify-self: center;
 }
 
 .meditation-details {
     display: grid;
     grid-column: meditation-details;
+    grid-template-rows: 1fr repeat(3, 3fr);
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
