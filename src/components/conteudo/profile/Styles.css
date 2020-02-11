@@ -1,7 +1,6 @@
 /* Styles Profile */
 
 
-color: #C7D7E5;
 .title {
   font-size: 1em;
 }
@@ -77,9 +76,6 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
     grid-gap: 10px;
 }
 
-.profile #information-user img {
-    width: 100%;
-}
 
 .profile h2 {
     font-size: 0.9em;
@@ -227,7 +223,6 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
 }
 
 .personal .manage-stress img {
-    position: relative;
     width: 100%;
     margin-top: -30px;
     margin-left: 30px;
@@ -288,8 +283,6 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
 }
 
 .personal .steps-manager img {
-    width: 100%;
-    position: relative;
     width: 100%;
     margin-top: -30px;
     margin-left: 30px;
@@ -438,7 +431,7 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
     text-align: center;
 }
 
-.key-metrics #active-key {
+.key-metrics div:nth-child(3) {
     display: grid;
     align-items: center;
     background: #0E2C46;
@@ -453,7 +446,7 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
     display: grid;
     align-self: center;
     justify-self: center;
-    width: 80%;
+    width: 50%;
 }
 
 .key-metrics h2 {
