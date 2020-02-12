@@ -112,6 +112,25 @@
     padding: 10px;
 }
 
+.options-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.options-top h2 {
+    padding-left: 15px;
+}
+
+
+.options-text-and-fig {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
 .options-marketing {
     display: grid;
     grid-column: marketing;
@@ -129,22 +148,6 @@
 .options-marketing h3 {
     font-size: 0.7em;
 }
-
-.options-marketing-team {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.options-marketing-healthy {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    align-items: center;
-    margin-bottom: 100px;
-    padding-right: 10px;
-}
-
 
 .options-marketing #share-button {
     width: 12em;
@@ -176,22 +179,6 @@
 
 .options-finance h3 {
     font-size: 0.7em;
-}
-
-
-.options-finance-team {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.options-finance-restorative {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    align-items: center;
-    margin-bottom: 100px;
-    padding-right: 10px;
 }
 
 #date-finance strong {
@@ -228,21 +215,6 @@
 
 .options-human-resorces h3 {
     font-size: 0.7em;
-}
-
-.options-human-resorces-team {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.options-human-resorces-corporate {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    align-items: center;
-    margin-bottom: 100px;
-    padding-right: 10px;
 }
 
 .options-human-resorces #get-started-button {

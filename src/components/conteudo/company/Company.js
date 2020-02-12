@@ -45,12 +45,12 @@ class Company extends Component {
 
                 <div className="options">
                     <div className="options-marketing">
-                        <div className="options-marketing-team">
+                        <div className="options-top">
                             <h1 className="title">MARKETING</h1>
                             <h2>This team is falling asleep at the desk</h2>
                         </div>
 
-                        <div className="options-marketing-healthy">
+                        <div className="options-text-and-fig">
                             
                             <div id="woman-main"><img src={Woman} alt="Woman"></img></div>
                             
@@ -70,12 +70,12 @@ class Company extends Component {
                     </div>
 
                     <div className="options-finance">
-                        <div className="options-finance-team">
+                        <div className="options-top">
                             <h1 className="title">FINANCE</h1>
                             <h2>This team is pulling their hair out</h2>
                         </div>
 
-                        <div className="options-finance-restorative">
+                        <div className="options-text-and-fig">
                             
                             <div id="finance-main"><img src={Finance} alt="Finance"></img></div>
                             
@@ -94,12 +94,12 @@ class Company extends Component {
                     </div>
 
                     <div className="options-human-resorces">
-                    <div className="options-human-resorces-team">
+                        <div className="options-top">
                             <h1 className="title">HUMAN RESORCES</h1>
                             <h2>This team needs a little workout!</h2>
                         </div>
 
-                        <div className="options-human-resorces-corporate">
+                        <div className="options-text-and-fig">
                             
                             <div id="corporate-main"><img src={Corporate} alt="Corporate"></img></div>
                             
