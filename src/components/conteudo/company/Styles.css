@@ -1,37 +1,30 @@
 /* Styles Company */
 
-.title {
-    font-size: 1em;
-  }
   
-
 /* Container ----- */
 .body-company {
     display: grid;
     grid-column: conteudo;
     grid-row: body;
-    grid-template-rows: [line1] 1fr [line2] 3fr [line3] 1.5fr [line4] 4fr;
-    grid-row: body;
+    grid-template-rows: [line1] 1fr [line2] 3fr [line3] 1fr [line4] 3fr;
     height: 100vh;
-    
   }
 
 /* Container ----- */
 .company-overview {
     display: grid;
     grid-row: line1;
-    grid-template-columns: [main] 2fr [icons] 1fr;
+    grid-template-columns: [main] 6fr [icons] 1fr;
 }
 
 .company-overview-main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     grid-column: main;
     align-items: center;
-    justify-content: space-evenly;
 }
 
-#company-overview-weekly {
+#company-overview-button {
     width: 218.96px;
     height: 55.1px;
     background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
@@ -43,8 +36,13 @@
     display: grid;
     grid-column: icons;
     justify-items: flex-end;
-    align-content: center;
+    justify-items: left;
 }
+
+.company-overview-icons h1 {
+    font-size: 0.7em;
+}
+
 
 .company-overview-icons-list {
     display: flex;
@@ -110,6 +108,10 @@
     grid-gap: 15px;
 }
 
+.text-options {
+    padding: 10px;
+}
+
 .options-marketing {
     display: grid;
     grid-column: marketing;
@@ -145,7 +147,7 @@
 
 
 .options-marketing #share-button {
-    width: 180px;
+    width: 12em;
     height: 45px;
     background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
     box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
@@ -197,7 +199,7 @@
 }
 
 .options-finance #buy-tickets-button {
-    width: 180px;
+    width: 12em;
     height: 45px;
     background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
     box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
@@ -244,7 +246,7 @@
 }
 
 .options-human-resorces #get-started-button {
-    width: 180px;
+    width: 12em;
     height: 45px;
     background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
     box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
@@ -271,6 +273,7 @@
 }
 
 .top-marketing {
+    display: grid;
     grid-column: top1;
     background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -280,7 +283,7 @@
     padding: 10px;
 }
 
-.top-marketing .main-title {
+.main-title {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -298,11 +301,6 @@
     padding: 10px;
 }
 
-.top-finance .main-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 .top-human-resorces {
     display: grid;
@@ -315,13 +313,6 @@
     padding: 10px;
 }
 
-
-.top-human-resorces .main-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .details {
     display: grid;
     grid-row: line4;
@@ -329,23 +320,24 @@
     grid-gap: 15px;
 }
 
-.title-details {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .stress-details {
     display: grid;
     grid-column: stress-details;
-    grid-template-rows: 1fr repeat(3, 3fr);
+    grid-template-rows: 1fr repeat(3, 2fr);
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 15px;
 }
 
+
 .details h2 {
-    font-size: 0.7em;
+    font-size: 0.6em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #D6DEE1;
+
+opacity: 0.4;
 }
 
 .details h3 {
@@ -353,65 +345,63 @@
     color: #D6DEE1;
 }
 
-.details #itens-orange {
+#itens-orange {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.details #circle-orange {
-    width: 30px;
-    height: 30px;
+#circle-orange {
+    width: 20px;
+    height: 20px;
     background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
     border-radius: 50px;   
 }
 
-.details #bar-orange {
+#bar-orange {
     width: 115.38px;
     height: 7px;
     background: linear-gradient(183.02deg, #FECE3D 0%, #FC3A5E 100%);
     border-radius: 12px; 
 }
 
-
-.details #itens-purple {
+#itens-purple {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.details #circle-purple {
-    width: 30px;
-    height: 30px;
+#circle-purple {
+    width: 20px;
+    height: 20px;
     background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
     border-radius: 50px;   
 }
 
-.details #bar-purple {
+#bar-purple {
     width: 115.38px;
     height: 7px;
     background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
     border-radius: 12px; 
 }
 
-
-.details #itens-blue {
+#itens-blue {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.details #circle-blue {
-    width: 30px;
-    height: 30px;
+#circle-blue {
+    width: 20px;
+    height: 20px;
     background: linear-gradient(90deg, #6E99FE -0.14%, #00FFFF 99.94%);
     border-radius: 50px;   
 }
 
-.details #bar-blue {
+#bar-blue {
     width: 115.38px;
     height: 7px;
     background: linear-gradient(90deg, #6E99FE -0.14%, #00FFFF 99.94%);
@@ -421,7 +411,7 @@
 .activity-details {
     display: grid;
     grid-column: activity-details;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 1fr 1fr;
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -431,7 +421,7 @@
 .sleep-details {
     display: grid;
     grid-column: sleep-details;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 1fr 4fr;
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -447,7 +437,7 @@
 .meditation-details {
     display: grid;
     grid-column: meditation-details;
-    grid-template-rows: 1fr repeat(3, 3fr);
+    grid-template-rows: 1fr repeat(3, 2fr);
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;

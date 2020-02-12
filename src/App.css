@@ -181,6 +181,7 @@
   grid-row: body;
   grid-template-columns: [overview] 1.2fr [meditation-column] 1fr [stress] 1fr;
   grid-template-rows: [meditation-row] 1fr [intolerance] 1fr;
+  height: 100vh;
 }
 
 .body ul {

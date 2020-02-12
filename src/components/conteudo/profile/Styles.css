@@ -154,15 +154,12 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
 
 
 .personal h2 {
-    font-size: 0.9em;
-}
-
-.personal h3 {
     font-size: 0.8em;
 }
 
+
 .personal h4 {
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 
@@ -185,6 +182,7 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
     line-height: 1.5;
 }
 
+
 .manage-stress div:nth-child(2) {
     padding: 20px;
 }
@@ -202,7 +200,7 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
     box-sizing: border-box;
     border-radius: 5px;
     padding-top: 10px;
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
 
 #stress-box {
@@ -210,12 +208,12 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
     box-sizing: border-box;
     border-radius: 5px;
     padding-top: 10px;
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
 
 .personal #manage-stress-box {
     display: grid;
-    grid-template-columns: 1fr 2fr 1.3fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
     padding: 5px 0 5px 0;
     align-items: center;
@@ -229,7 +227,7 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
 }
 
 .personal .manage-stress h3 {
-    font-size: 0.7em;
+    font-size: 0.5em;
 }
 
 .personal .steps-manager {
@@ -257,12 +255,13 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
 .steps-manager div:nth-child(2) h3 {
     padding-bottom: 10px;
 }
+
 #business-box {
     border: 1px solid #C7D7E5;
     box-sizing: border-box;
     border-radius: 5px;
     padding-top: 10px;
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
 
 #activities-box {
@@ -270,7 +269,7 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
     box-sizing: border-box;
     border-radius: 5px;
     padding-top: 10px;
-    font-size: 0.8em;
+    font-size: 0.5em;
 }
 
 .personal #steps-manager-box {
@@ -289,7 +288,7 @@ grid-template-rows: [profile] 1fr [personal] 1.5fr;
 }
 
 .personal .steps-manager h3 {
-    font-size: 0.7em;
+    font-size: 0.5em;
 }
 
 /* Container ----- */

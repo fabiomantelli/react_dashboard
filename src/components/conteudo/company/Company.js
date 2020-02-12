@@ -28,7 +28,7 @@ class Company extends Component {
                 <div className="company-overview">
                     <div className="company-overview-main">
                         <h1>COMPANY OVERVIEW</h1>
-                        <button id="company-overview-weekly">WEEKLY</button>
+                        <button id="company-overview-button">WEEKLY</button>
                         
                     </div>
 
@@ -54,7 +54,7 @@ class Company extends Component {
                             
                             <div id="woman-main"><img src={Woman} alt="Woman"></img></div>
                             
-                            <div>
+                            <div className="text-options">
                                 <h2><strong>Healthy Sleep Tips</strong></h2>
                                 <h3>Healthy sleep habits can make a big differene in your quality of life.
                                     Having healthy sleep habits is often referred to as having good sleep hygiene. <strong>Read more...</strong>
@@ -79,7 +79,7 @@ class Company extends Component {
                             
                             <div id="finance-main"><img src={Finance} alt="Finance"></img></div>
                             
-                            <div id="text-finance">
+                            <div className="text-options">
                                 <h2 id="date-finance"><strong>Thu, Jan 30, 7:00 PM</strong></h2>
                                 <h3>Restorative Yoga/Reset the Mind Body e Spirit</h3>
                                 <h3>Welcome Angels Wellness Centre Inc. Mississauga, ON</h3>
@@ -103,7 +103,7 @@ class Company extends Component {
                             
                             <div id="corporate-main"><img src={Corporate} alt="Corporate"></img></div>
                             
-                            <div>
+                            <div className="text-options">
                                 <h2><strong>Corporate Gym Memberships</strong></h2>
                                 <h3>
                                     Give members of your organization the good life with exclusive
@@ -176,9 +176,9 @@ class Company extends Component {
 
                 <div className="details">
                     <div className="stress-details">
-                        <div className="title-details">
-                            <h1 className="title">Stress</h1>
-                            <h2>PROVIDED BY GARMIN</h2>
+                        <div>
+                            <h1 className="title">STRESS DETAILS</h1>
+                            <h2 className="provided">PROVIDED BY GARMIN</h2>
                         </div>
 
                         <div id="itens-orange">
@@ -216,10 +216,11 @@ class Company extends Component {
                             <h3>75%</h3>
                             <h4>2h9min</h4>
                         </div>
+
                     </div>
 
                     <div className="activity-details">
-                        <div className="title-details">
+                        <div className="provided">
                             <h1 className="title">ACTIVITY DETAILS</h1>
                             <h2>PROVIDED BY GARMIN</h2>
                         </div>
@@ -229,7 +230,7 @@ class Company extends Component {
                     </div>
 
                     <div className="sleep-details">
-                        <div className="title-details">
+                        <div className="provided">
                             <h1 className="title">SLEEP DETAILS</h1>
                             <h2>PROVIDED BY GARMIN</h2>
                         </div>
@@ -237,7 +238,7 @@ class Company extends Component {
                     </div>
 
                     <div className="meditation-details">
-                        <div className="title-details">
+                        <div className="provided">
                             <h1 className="title">MEDITATION DETAILS</h1>
                             <h2>PROVIDED BY GARMIN</h2>
                         </div>
@@ -271,6 +272,7 @@ class Company extends Component {
                             <div id="purple-icon" />
                             <div id="green-icon" />
                         </div>
+
 
                     </div>
                 </div>
