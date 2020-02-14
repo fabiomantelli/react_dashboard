@@ -31,10 +31,10 @@ class Conteudo extends Component {
         return (
             <div className="body-profile">
                 <div className="user">
-                    <div className="profile">
+                    <div className="box profile">
                         <h1 className="title">PROFILE</h1>
 
-                        <div id="information-user">
+                        <div className="information-user">
                             <img src={User} alt="User" />
 
                             <div>
@@ -43,8 +43,8 @@ class Conteudo extends Component {
                                 <h3>(604) 555-5555</h3>
                                 
                                 <div id="links">
-                                    <h2 id="cco">CCO</h2>
-                                    <h2 id="marketing-team">MARKETING TEAM</h2>
+                                    <h2 className="itens-profile">CCO</h2>
+                                    <h2 className="itens-profile">MARKETING TEAM</h2>
                                     <div id="plus" />
                                 </div>
 
@@ -57,41 +57,42 @@ class Conteudo extends Component {
                         </div>
                     </div>
                     
-                    <div className="personal">
+                    <div className="box personal">
                         <div className="main-personal">
                             <h1 className="title">PERSONAL RECOMENDATIONS</h1>
                             <h2>Based on his metrics, this is the article we would suggest him to read and get some insights.</h2>
                         </div>
-                        <div className="manage-stress">
+                        
+                        <div className="box-items manage-stress">
                             <img src={People1} alt="People1" />
-                            <div>
+                            <div className="text-topics">
                                 <h2>How to manage your stress</h2>
                                 <h3>Integer consectetur uma quam, ac maximus turpis faucibus id.
                                     Quisque tincidunt diam dolor. Morbi accumsan vestibulum leo vitae commodo.
                                     Duis quis mi varius, luctus lorem ut, elementum lectus.
                                     Donec sit amet nibh pellentesque.
                                 </h3>
-                                <div id="manage-stress-box">
+                                <div className="box-topics">
                                     <h3>Topics: </h3>
-                                    <h2 id="meditation-box">MEDITATION</h2>
-                                    <h2 id="stress-box">STRESS</h2>
+                                    <h2 className="itens-topics">MEDITATION</h2>
+                                    <h2 className="itens-topics">STRESS</h2>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="steps-manager">
+                        <div className="box-items steps-manager">
                           <img src={People2} alt="People2" />
-                            <div>
+                            <div className="text-topics">
                                 <h2>5 Steps to be a better manager</h2>
                                 <h3>Integer consectetur uma quam, ac maximus turpis faucibus id.
                                     Quisque tincidunt diam dolor. Morbi accumsan vestibulum leo vitae commodo.
                                     Duis quis mi varius, luctus lorem ut, elementum lectus.
                                     Donec sit amet nibh pellentesque.
                                 </h3>
-                                <div id="steps-manager-box">
+                                <div className="box-topics">
                                     <h3>Topics: </h3>
-                                    <h2 id="business-box">BUSINESS</h2>
-                                    <h2 id="activities-box">ACTIVITIES</h2>
+                                    <h2 className="itens-topics">BUSINESS</h2>
+                                    <h2 className="itens-topics">ACTIVITIES</h2>
                                 </div>
                             </div>
                         </div>
@@ -99,9 +100,11 @@ class Conteudo extends Component {
                 </div>
 
                 <div className="information">
-                    <div className="log">
-                        <h1 className="title">LOG INFORMATION</h1>
-                        <h2> See whats been going on lately</h2>
+                    <div className="box log">
+                        <div>
+                            <h1 className="title">LOG INFORMATION</h1>
+                            <h2> See whats been going on lately</h2>
+                        </div>
 
                         <div id="grid-log">
                             <span>
@@ -154,7 +157,7 @@ class Conteudo extends Component {
                     </div>
                     
 
-                    <div className="team-member">
+                    <div className="box team-member">
                         <div className="team-member-top">
                             <h1 className="title">TEAM MEMBER</h1>
                             
@@ -164,7 +167,6 @@ class Conteudo extends Component {
                             </div>
 
                         </div>
-
 
                         <div id="grid-team-member">
                             <span>
@@ -200,19 +202,11 @@ class Conteudo extends Component {
                             <span><img src={Man} alt="Man" />Floyd Lane</span>
                             <span>-15%</span>
                             <span>32</span>
-
-                            <span><img src={Man} alt="Man" />Bessie Wilson</span>
-                            <span>-15%</span>
-                            <span>32</span>
-
-                            <span><img src={Man} alt="Man" />Floyd Lane</span>
-                            <span>-15%</span>
-                            <span>32</span>
                         </div>
 
                     </div>
 
-                    <div className="key-metrics">
+                    <div className="box key-metrics">
                         <div className="key-metrics-top">
                             <h1 className="title">KEY METRICS</h1>
                             

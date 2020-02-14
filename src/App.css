@@ -20,12 +20,12 @@
   display: grid;
   grid-template-columns: [sidenav] 1fr [conteudo] 14fr;
   grid-template-rows: [header-page] 100px [body] 100vh;
-  grid-gap: 15px;
+  gap: 15px;
   /*align-items: stretch; Alinha conforme o limite inferior de rolagem*/ 
   background-image: linear-gradient(to top, #19222f, #002544);
   padding-right: 15px;
   padding-bottom: 15px;
-  align-items: strech;
+  /*align-items: strech;*/
   /*overflow: hidden;*/
 }
 
@@ -177,7 +177,7 @@
 .body {
   display: grid;
   grid-column: conteudo;
-  grid-gap: 15px;
+  gap: 15px;
   grid-row: body;
   grid-template-columns: [overview] 1.2fr [meditation-column] 1fr [stress] 1fr;
   grid-template-rows: [meditation-row] 1fr [intolerance] 1fr;
@@ -364,7 +364,7 @@ ul li a:hover::after {
   display: grid;
   grid-column: meditation-column;
   grid-row: intolerance;
-  grid-gap: 10px;
+  gap: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to bottom, #19222f, #002544);
@@ -401,7 +401,7 @@ ul li a:hover::after {
   grid-row: meditation-row;
   grid-template-columns: [stress] 1fr;
   grid-template-rows: [alert] 1.5fr [weekly] 1fr;
-  grid-gap: 15px;
+  gap: 15px;
 }
 
 .stress {

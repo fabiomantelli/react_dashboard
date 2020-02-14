@@ -44,13 +44,13 @@ class Company extends Component {
                 </div>
 
                 <div className="options">
-                    <div className="options-marketing">
+                    <div className="options-box marketing">
                         <div className="options-top">
                             <h1 className="title">MARKETING</h1>
                             <h2>This team is falling asleep at the desk</h2>
                         </div>
 
-                        <div className="options-text-and-fig">
+                        <div className="options-middle">
                             
                             <div id="woman-main"><img src={Woman} alt="Woman"></img></div>
                             
@@ -63,19 +63,19 @@ class Company extends Component {
 
                         </div>
 
-                        <div>
-                            <button id="share-button">SHARE WITH TEAM</button>
+                        <div className="button-location">
+                            <button className="button">SHARE WITH TEAM</button>
                         </div>
                         
                     </div>
 
-                    <div className="options-finance">
+                    <div className="options-box finance">
                         <div className="options-top">
                             <h1 className="title">FINANCE</h1>
                             <h2>This team is pulling their hair out</h2>
                         </div>
 
-                        <div className="options-text-and-fig">
+                        <div className="options-middle">
                             
                             <div id="finance-main"><img src={Finance} alt="Finance"></img></div>
                             
@@ -88,18 +88,18 @@ class Company extends Component {
 
                         </div>
 
-                        <div>
-                            <button id="buy-tickets-button">BUY TICKETS</button>
+                        <div className="button-location">
+                            <button className="button">BUY TICKETS</button>
                         </div>
                     </div>
 
-                    <div className="options-human-resorces">
+                    <div className="options-box human-resorces">
                         <div className="options-top">
                             <h1 className="title">HUMAN RESORCES</h1>
                             <h2>This team needs a little workout!</h2>
                         </div>
 
-                        <div className="options-text-and-fig">
+                        <div className="options-middle">
                             
                             <div id="corporate-main"><img src={Corporate} alt="Corporate"></img></div>
                             
@@ -115,15 +115,15 @@ class Company extends Component {
 
                         </div>
 
-                        <div>
-                            <button id="get-started-button">GET STARTED</button>
+                        <div className="button-location">
+                            <button className="button">GET STARTED</button>
                         </div>
                     </div>
                 </div>
 
                 <div className="tops">
 
-                    <div className="top-marketing">
+                    <div className="top-box top-marketing">
                         
                         <div className="main-title">
                             <h1 className="title">TOP PERFORMERS</h1>
@@ -141,7 +141,7 @@ class Company extends Component {
                     </div>
 
 
-                    <div className="top-finance">
+                    <div className="top-box top-finance">
                          <div className="main-title">
                             <h1 className="title">TOP PERFORMERS</h1>
                             <h3>See complete list</h3>
@@ -157,9 +157,8 @@ class Company extends Component {
                         
                     </div>
 
-
-                    <div className="top-human-resorces">
-                    <div className="main-title">
+                    <div className="top-box top-human-resorces">
+                        <div className="main-title">
                             <h1 className="title">TOP PERFORMERS</h1>
                             <h3>See complete list</h3>
                         </div>
@@ -175,8 +174,8 @@ class Company extends Component {
                 </div>
 
                 <div className="details">
-                    <div className="stress-details">
-                        <div>
+                    <div className="details-box stress-details">
+                        <div className="main-details">
                             <h1 className="title">STRESS DETAILS</h1>
                             <h2 className="provided">PROVIDED BY GARMIN</h2>
                         </div>
@@ -219,26 +218,28 @@ class Company extends Component {
 
                     </div>
 
-                    <div className="activity-details">
-                        <div className="provided">
+                    <div className="details-box activity-details">
+                        <div className="main-details">
                             <h1 className="title">ACTIVITY DETAILS</h1>
                             <h2>PROVIDED BY GARMIN</h2>
                         </div>
+                        
                         <div>
                             <h2>Future Content</h2>
                         </div>
                     </div>
 
-                    <div className="sleep-details">
-                        <div className="provided">
+                    <div className="details-box sleep-details">
+                        <div className="main-details">
                             <h1 className="title">SLEEP DETAILS</h1>
                             <h2>PROVIDED BY GARMIN</h2>
                         </div>
+                        
                         <img src={ManData} alt="ManData" />
                     </div>
 
-                    <div className="meditation-details">
-                        <div className="provided">
+                    <div className="details-box meditation-details">
+                        <div className="main-details">
                             <h1 className="title">MEDITATION DETAILS</h1>
                             <h2>PROVIDED BY GARMIN</h2>
                         </div>
@@ -272,7 +273,6 @@ class Company extends Component {
                             <div id="purple-icon" />
                             <div id="green-icon" />
                         </div>
-
 
                     </div>
                 </div>

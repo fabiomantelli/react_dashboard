@@ -6,7 +6,7 @@
     display: grid;
     grid-column: conteudo;
     grid-row: body;
-    grid-template-rows: [line1] 1fr [line2] 3fr [line3] 1fr [line4] 3fr;
+    grid-template-rows: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr;
     height: 100vh;
   }
 
@@ -105,11 +105,14 @@
     display: grid;
     grid-row: line2;
     grid-template-columns: [marketing] 1fr [finance] 1fr [human] 1fr;
-    grid-gap: 15px;
+    gap: 15px;
 }
 
-.text-options {
-    padding: 10px;
+.options-box {
+    background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 15px;
 }
 
 .options-top {
@@ -120,49 +123,50 @@
 
 .options-top h2 {
     padding-left: 15px;
+    font-size: 0.8em;
+    color: #FC3A5E;
 }
 
-
-.options-text-and-fig {
+.options-middle {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     margin-bottom: 100px;
 }
 
-
-.options-marketing {
-    display: grid;
-    grid-column: marketing;
-    background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 15px;
+.text-options {
+    padding: 10px;
 }
 
-.options-marketing h2 {
+.text-options h2 {
     font-size: 0.8em;
-    color: #FC3A5E;
 }
 
-.options-marketing h3 {
+.text-options h3 {
     font-size: 0.7em;
 }
 
-.options-marketing #share-button {
+.button-location {
+    justify-self: right;
+}
+
+.button {
     width: 12em;
     height: 45px;
     background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
     box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
     border-radius: 8px;
     font-size: 0.8em;
-}    
+}  
 
-.options-marketing div:nth-child(3) {
-    justify-self: right;
+/* --- */
+.marketing {
+    display: grid;
+    grid-column: marketing;
 }
 
-.options-finance {
+/* --- */
+.finance {
     display: grid;
     grid-column: finance;
     background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
@@ -172,12 +176,7 @@
 }
 
 
-.options-finance h2 {
-    font-size: 0.8em;
-    color: #FC3A5E;
-}
-
-.options-finance h3 {
+.finance h3 {
     font-size: 0.7em;
 }
 
@@ -185,51 +184,17 @@
     color: #2AF598;
 }
 
-.options-finance #buy-tickets-button {
-    width: 12em;
-    height: 45px;
-    background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
-    box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
-    border-radius: 8px;
-    font-size: 0.8em;
-}    
-
-.options-finance div:nth-child(3) {
-    justify-self: right;
-}
-
-
-.options-human-resorces {
+/* --- */
+.human-resorces {
     display: grid;
     grid-column: human;
-    background: linear-gradient(161.21deg, #19222F -28.9%, #002544 108.17%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 15px;
 }
 
-.options-human-resorces h2 {
-    font-size: 0.8em;
-    color: #FC3A5E;
-}
-
-.options-human-resorces h3 {
+.human-resorces h3 {
     font-size: 0.7em;
 }
 
-.options-human-resorces #get-started-button {
-    width: 12em;
-    height: 45px;
-    background: linear-gradient(76.46deg, #72C6EF -0.02%, #004E8F 100.02%);
-    box-shadow: 5px 5px 15px rgba(16, 35, 54, 0.27);
-    border-radius: 8px;
-    font-size: 0.8em;
-}    
-
-.options-human-resorces div:nth-child(3) {
-    justify-self: right;
-}
-
+/* ------ Container */
 .tops {
     display: grid;
     grid-row: line3;
@@ -240,18 +205,13 @@
     width: 10%;
 }
 
-.tops h3 {
-    font-size: .5em;
-}
-
-.top-marketing {
-    display: grid;
-    grid-column: top1;
+.top-box {
+    position: relative;
     background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    margin: -100px 50% 100px 5%;
+    margin: -70px 50% 100px 5%;
     padding: 10px;
 }
 
@@ -262,40 +222,38 @@
     
 }
 
+.main-title h3 {
+    font-size: .5em;
+}
+
+/* --- */
+.top-marketing {
+    display: grid;
+    grid-column: top1;
+}
+
+/* --- */
 .top-finance {
     display: grid;
     grid-column: top2;
-    background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    margin: -100px 50% 100px 5%;
-    padding: 10px;
 }
 
-
+/* --- */
 .top-human-resorces {
     display: grid;
     grid-column: top3;
-    background: linear-gradient(168.4deg, rgba(156, 198, 255, 0.084) -28.9%, rgba(0, 37, 68, 0.3) 108.17%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    margin: -100px 50% 100px 5%;
-    padding: 10px;
 }
+
+/* ------ Container */
 
 .details {
     display: grid;
     grid-row: line4;
     grid-template-columns: [stress-details] 1fr [activity-details] 1fr [sleep-details] 1fr [meditation-details] 1fr;
-    grid-gap: 15px;
+    gap: 15px;
 }
 
-.stress-details {
-    display: grid;
-    grid-column: stress-details;
-    grid-template-rows: 1fr repeat(3, 2fr);
+.details-box {
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -303,13 +261,18 @@
 }
 
 
+/* --- */
+.stress-details {
+    display: grid;
+    grid-column: stress-details;
+    grid-template-rows: repeat(4, 1fr);
+}
+
 .details h2 {
     font-size: 0.6em;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
     color: #D6DEE1;
-
-opacity: 0.4;
+    opacity: 0.4;
 }
 
 .details h3 {
@@ -380,99 +343,87 @@ opacity: 0.4;
     border-radius: 12px; 
 }
 
+/* --- */
 .activity-details {
     display: grid;
     grid-column: activity-details;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 15px;
 }
 
+/* --- */
 .sleep-details {
     display: grid;
     grid-column: sleep-details;
-    grid-template-rows: 1fr 4fr;
-    background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 15px;
+    grid-template-rows: 1fr 3fr;
 }
 
 .sleep-details img {
-    width: 20%;
+    max-width: 15%;
     align-self: center;
     justify-self: center;
 }
 
+/* --- */
 .meditation-details {
     display: grid;
     grid-column: meditation-details;
-    grid-template-rows: 1fr repeat(3, 2fr);
-    background: linear-gradient(145.47deg, #19222F -28.9%, #002544 108.17%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    padding: 15px;
+    grid-template-rows: repeat(4, 1fr);
 }
 
-.meditation-details .itens-meditation-1 {
+
+.meditation-details h1 {
+    font-size: 0.8em;
+}
+
+.meditation-details h2 {
+    font-size: 0.6em;
+}
+
+.itens-meditation-1 {
     display: flex;
     box-flex-group: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.meditation-details .itens-meditation-1 h1 {
-    font-size: 0.8em;
-}
-
-.meditation-details .itens-meditation-1 h2 {
-    font-size: 0.6em;
-}
-
-.meditation-details #green-square {
+#green-square {
     width: 15px;
     height: 15px;
     background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%); 
 }
 
-.meditation-details #blue-icon {
+#blue-icon {
     width: 30px;
     height: 30px;
     background: linear-gradient(86.53deg, #72C6EF -0.02%, #004E8F 100.02%);
     border-radius: 8px;
 }
 
-.meditation-details #rose-icon {
+#rose-icon {
     width: 30px;
     height: 30px;
     background: linear-gradient(90deg, #C84E89 0%, #F15F79 100%);
     border-radius: 8px;
 }
 
-.meditation-details .itens-meditation-2 {
+.itens-meditation-2 {
     display: flex;
     box-flex-group: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.meditation-details .itens-meditation-2 h1 {
-    font-size: 0.8em;
-}
-
-.meditation-details .itens-meditation-2 h2 {
-    font-size: 0.6em;
-}
-
-.meditation-details #orange-square {
+#orange-square {
     width: 15px;
     height: 15px;
     background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
 }
 
-.meditation-details #orange-icon {
+#orange-icon {
     width: 30px;
     height: 30px;
     background: linear-gradient(221.02deg, #FECE3D 0%, #FC3A5E 100%);
@@ -480,43 +431,34 @@ border-radius: 8px;
     border-radius: 8px;
 }
 
-.meditation-details #red-icon {
+#red-icon {
     width: 30px;
     height: 30px;
     background: radial-gradient(375% 375% at -66.67% 29.17%, #01325B 0%, #302E50 21.3%, #ED1C24 57.86%, #004B7F 100%);
     border-radius: 8px;
 }
 
-.meditation-details .itens-meditation-3 {
+.itens-meditation-3 {
     display: flex;
     box-flex-group: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.meditation-details .itens-meditation-3 h1 {
-    font-size: 0.8em;
-}
-
-.meditation-details .itens-meditation-3 h2 {
-    font-size: 0.6em;
-}
-
-
-.meditation-details #purple-square {
+#purple-square {
     width: 15px;
     height: 15px;
     background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
 }
 
-.meditation-details #purple-icon {
+#purple-icon {
     width: 30px;
     height: 30px;
     background: linear-gradient(90deg, #E4197E -0.19%, #802BFF 100.04%);
     border-radius: 8px;
 }
 
-.meditation-details #green-icon {
+#green-icon {
     width: 30px;
     height: 30px;
     background: linear-gradient(180deg, #2AF598 -0.11%, #08AEEA 100%);
